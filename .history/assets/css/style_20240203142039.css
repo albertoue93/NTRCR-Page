@@ -454,7 +454,7 @@ ul {
   right: 0;
   overflow: hidden;
   margin: auto;
-  animation: circle 1.2s linear infinite;
+  animation: circle 1.5s linear infinite;
 }
 .egns-preloader .circle-border .moving-circle:nth-child(3) {
   width: 10px;
@@ -26076,7 +26076,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   color: var(--primary-color1);
 }
 .breadcrumb-section .banner-content .breadcrumb-list li::before {
-  content: url(../img/innerpage/icon/slash.svg);
+  content: url(../img/innerpage/icon/arrow.svg);
   position: absolute;
   left: 0;
   top: 50%;

@@ -454,7 +454,7 @@ ul {
   right: 0;
   overflow: hidden;
   margin: auto;
-  animation: circle 1.2s linear infinite;
+  animation: circle 1.25s linear infinite;
 }
 .egns-preloader .circle-border .moving-circle:nth-child(3) {
   width: 10px;
@@ -26076,7 +26076,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   color: var(--primary-color1);
 }
 .breadcrumb-section .banner-content .breadcrumb-list li::before {
-  content: url(../img/innerpage/icon/slash.svg);
+  content: url(../img/innerpage/icon/arrow.svg);
   position: absolute;
   left: 0;
   top: 50%;
@@ -35104,5 +35104,90 @@ select::-ms-expand {
 @media screen and (max-width: 620px) {
   .formC:nth-child(1) {
     gap: 0;
+  }
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 999999999
+}
+
+.sk-spinner-wave.sk-spinner {
+  margin: -15px 0 0 -25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 10px
+}
+
+.ie8 .sk-spinner-wave.sk-spinner {
+  display: none
+}
+
+.sk-spinner-wave div {
+  background-color: #ccc;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
+  animation: sk-waveStretchDelay 1.2s infinite ease-in-out
+}
+
+.sk-spinner-wave .sk-rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s
+}
+
+.sk-spinner-wave .sk-rect3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s
+}
+
+.sk-spinner-wave .sk-rect4 {
+  -webkit-animation-delay: -.9s;
+  animation-delay: -.9s
+}
+
+.sk-spinner-wave .sk-rect5 {
+  -webkit-animation-delay: -.8s;
+  animation-delay: -.8s
+}
+
+@-webkit-keyframes sk-waveStretchDelay {
+
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4)
+  }
+
+  20% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1)
+  }
+}
+
+@keyframes sk-waveStretchDelay {
+
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4)
+  }
+
+  20% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1)
   }
 }
