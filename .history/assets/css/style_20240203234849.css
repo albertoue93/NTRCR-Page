@@ -2500,25 +2500,25 @@ header.style-1.dashboard
   fill: var(--primary-color1);
 }
 header.style-2 {
-  position: fixed;
-  top: 30px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 60px;
-  transition: all 0.8s ease-out 0s;
-  background: rgba(0, 0, 0, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(2.5px);
-  backdrop-filter: blur(1.5px);
-  max-width: 1780px;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 300px;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    transition: all .8s ease-out 0s;
+    background: rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, .15);
+    -webkit-backdrop-filter: blur(1.5px);
+    backdrop-filter: blur(1.5px);
+    max-width: 1780px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 300px
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
   header.style-2 {
@@ -2549,7 +2549,7 @@ header.style-2 {
 }
 header.style-2.sticky {
   position: fixed;
-  top: 0;
+  top: 5;
   left: 0;
   width: 100%;
   padding-top: 0 !important;

@@ -2511,7 +2511,7 @@ header.style-2 {
   align-items: center;
   padding: 0 60px;
   transition: all 0.8s ease-out 0s;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(2.5px);
   backdrop-filter: blur(1.5px);
@@ -2549,7 +2549,7 @@ header.style-2 {
 }
 header.style-2.sticky {
   position: fixed;
-  top: 0;
+  top: 5;
   left: 0;
   width: 100%;
   padding-top: 0 !important;
@@ -3244,7 +3244,7 @@ header.style-2 .main-menu .hotline-area .content h6 a:hover {
   header.style-2 .main-menu ul li .bi {
     top: 8px;
     font-size: 20px;
-    color: var(--white-color);
+    color: var(--black-color);
   }
   header.style-2 .main-menu ul li.active a::before {
     display: none;

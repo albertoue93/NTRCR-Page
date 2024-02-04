@@ -2549,7 +2549,7 @@ header.style-2 {
 }
 header.style-2.sticky {
   position: fixed;
-  top: 0;
+  top: 5;
   left: 0;
   width: 100%;
   padding-top: 0 !important;

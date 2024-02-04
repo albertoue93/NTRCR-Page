@@ -2501,7 +2501,7 @@ header.style-1.dashboard
 }
 header.style-2 {
   position: fixed;
-  top: 30px;
+  top: 20px;
   left: 0;
   right: 0;
   width: 100%;
@@ -2538,7 +2538,7 @@ header.style-2 {
 }
 @media (max-width: 991px) {
   header.style-2 {
-    top: 0;
+    top: 1;
     padding: 0 30px;
   }
 }
@@ -2549,7 +2549,7 @@ header.style-2 {
 }
 header.style-2.sticky {
   position: fixed;
-  top: 0;
+  top: 5;
   left: 0;
   width: 100%;
   padding-top: 0 !important;

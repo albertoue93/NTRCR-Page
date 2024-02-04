@@ -2549,7 +2549,7 @@ header.style-2 {
 }
 header.style-2.sticky {
   position: fixed;
-  top: 0;
+  top: 5;
   left: 0;
   width: 100%;
   padding-top: 0 !important;
@@ -2858,7 +2858,7 @@ header.style-2 .main-menu ul > li ul.sub-menu > li .dropdown-icon {
   color: var(--white-color);
   opacity: 1;
   top: 14px;
-  font-size: 14px;
+  font-size: 17px;
   right: 10px;
 }
 @media (max-width: 991px) {
