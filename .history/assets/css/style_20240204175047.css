@@ -26027,7 +26027,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 .breadcrumb-section {
 /*here*/
-  -webkit-mask-box-image: url(../img/home2/banner-12.png);
+  /*-webkit-mask-box-image: url(../img/home2/banner-12.png);*/
   -webkit-mask-box-size: cover;
   -webkit-mask-box-repeat: no-repeat;
   box-shadow: 0 0 10px #000;
@@ -26035,7 +26035,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 220px 0 130px;
+  padding: 120px 0 130px;
 }
 .breadcrumb-section .banner-content h1 {
   color: var(--white-color);
