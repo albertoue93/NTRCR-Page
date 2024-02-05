@@ -14350,7 +14350,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  padding-top: 30px;
+  padding-top: 5px;
 }
 @media (max-width: 991px) {
   .tripadvisor-review {

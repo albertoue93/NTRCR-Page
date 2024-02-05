@@ -1271,7 +1271,7 @@ ul {
   gap: 10px;
   color: var(--primary-color1);
   font-family: var(--font-satisfy);
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.51px;
@@ -9327,7 +9327,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   .nav-pills
   .nav-item
   .nav-link.active {
-  background-color: var(--primary-color1);
+  background-color: var(--primary-color2);
 }
 .verticle-tab-section
   .verticle-tab-wrapper
@@ -9369,7 +9369,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   -webkit-mask-box-position: center;
   -webkit-mask-box-repeat: no-repeat;
   -webkit-mask-box-size: cover;
-  background-color: var(--primary-color1);
+  background-color: var(--primary-color2);
   padding: 8px 47px;
   white-space: nowrap;
   display: inline-flex;
@@ -9383,7 +9383,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   span {
   color: var(--white-color);
   font-family: var(--font-satisfy);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.72px;

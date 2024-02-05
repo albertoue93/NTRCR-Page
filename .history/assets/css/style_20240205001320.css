@@ -23889,6 +23889,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 .home5-teams-section .teams-slider-area .home5-teams-card-slider {
   padding: 10px;
   margin: -10px;
+  align-items: center;
 }
 .home5-teams-section .teams-pagination-area .teams-pagination {
   width: unset !important;
