@@ -32174,8 +32174,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 .sidebar-area .single-widget {
   padding: 25px;
   border-radius: 5px;
-  /*box-shadow: 0 0 25px 0 rgba(16, 16, 16, 0.05);*/
-  box-shadow: 0 0 10px 0 #000;
+  box-shadow: 0 0 25px 0 rgba(16, 16, 16, 0.05);
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .sidebar-area .single-widget {
