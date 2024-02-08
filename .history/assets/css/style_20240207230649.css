@@ -13315,24 +13315,24 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   border-top: 1px solid rgba(34, 34, 34, 0.2);
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .package-card .package-card-content .card-content-bottom {
+  .package-card3 .package-card-content .card-content-bottom {
     padding: 20px 15px;
   }
 }
 @media (max-width: 991px) {
-  .package-card .package-card-content .card-content-bottom {
+  .package-card3 .package-card-content .card-content-bottom {
     padding: 20px;
   }
 }
 @media (max-width: 576px) {
-  .package-card .package-card-content .card-content-bottom {
+  .package-card3 .package-card-content .card-content-bottom {
     padding: 20px 15px;
   }
 }
-.package-card .package-card-content .card-content-bottom .price-area {
+.package-card3 .package-card-content .card-content-bottom .price-area {
   line-height: 1;
 }
-.package-card .package-card-content .card-content-bottom .price-area .title {
+.package-card3 .package-card-content .card-content-bottom .price-area .title {
   color: var(--title-color);
   font-family: var(--font-rubik);
   font-size: 13px;
