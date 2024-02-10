@@ -26069,32 +26069,17 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   visibility: visible;
 }
 .breadcrumb-section {
-/*here
-  -webkit-mask-box-image: url(../img/home2/banner-2.png);
+/*here*/
+  -webkit-mask-box-image:  url('data:image/svg+xml;utf8,<svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 L 0,150 C 125.42857142857142,166.10714285714286 250.85714285714283,182.21428571428572 354,174 C 457.14285714285717,165.78571428571428 538.0000000000001,133.25 653,115 C 767.9999999999999,96.74999999999999 917.1428571428571,92.78571428571428 1054,101 C 1190.857142857143,109.21428571428572 1315.4285714285716,129.60714285714286 1440,150 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#ff0080" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path></svg>');
   -webkit-mask-box-size: cover;
-  -webkit-mask-box-repeat: no-repeat;*/
-  /*box-shadow: 0 0 10px #000;*/
+  -webkit-mask-box-repeat: no-repeat;
+  box-shadow: 0 0 10px #000;
   text-shadow: 0 0 10px #000;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 220px 0 130px;
-}
-.wave1 {
-  -webkit-mask-box-image: url(../img/home2/wave.svg);
-  -webkit-mask-box-size: cover;
-  -webkit-mask-box-repeat: no-repeat;
-  position: relative;
-  height: 400px;
-}
-.wave {
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 100%;
-  height: auto;
-  fill: #ffffff; /* Color del SVG */
 }
 .breadcrumb-section .banner-content h1 {
   color: var(--white-color);

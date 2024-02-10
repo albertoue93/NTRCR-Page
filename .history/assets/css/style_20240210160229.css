@@ -26090,7 +26090,8 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 .wave {
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
+  top: 120px;
   left: 0;
   width: 100%;
   height: auto;

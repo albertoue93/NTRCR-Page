@@ -26069,32 +26069,17 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   visibility: visible;
 }
 .breadcrumb-section {
-/*here
-  -webkit-mask-box-image: url(../img/home2/banner-2.png);
+/*here*/
+  -webkit-mask-box-image:  url('data:image/svg+xml;utf8,<svg viewBox="0 0 1315 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(47, 73, 94, 1)" d="M 0 26 C 267.2 26 400.8 110 668 110 L 668 110 L 668 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(47, 73, 94, 1)" d="M 667 110 C 926.2 110 1055.8 31 1315 31 L 1315 31 L 1315 0 L 667 0 Z" stroke-width="0"></path> </svg>');
   -webkit-mask-box-size: cover;
-  -webkit-mask-box-repeat: no-repeat;*/
-  /*box-shadow: 0 0 10px #000;*/
+  -webkit-mask-box-repeat: no-repeat;
+  box-shadow: 0 0 10px #000;
   text-shadow: 0 0 10px #000;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 220px 0 130px;
-}
-.wave1 {
-  -webkit-mask-box-image: url(../img/home2/wave.svg);
-  -webkit-mask-box-size: cover;
-  -webkit-mask-box-repeat: no-repeat;
-  position: relative;
-  height: 400px;
-}
-.wave {
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 100%;
-  height: auto;
-  fill: #ffffff; /* Color del SVG */
 }
 .breadcrumb-section .banner-content h1 {
   color: var(--white-color);

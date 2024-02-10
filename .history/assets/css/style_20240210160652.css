@@ -26089,8 +26089,10 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   height: 400px;
 }
 .wave {
+  -webkit-mask-box-image: url(../img/home2/wave.svg);
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
+  top: 190px;
   left: 0;
   width: 100%;
   height: auto;

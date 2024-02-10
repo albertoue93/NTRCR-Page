@@ -26073,7 +26073,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   -webkit-mask-box-image: url(../img/home2/banner-2.png);
   -webkit-mask-box-size: cover;
   -webkit-mask-box-repeat: no-repeat;*/
-  /*box-shadow: 0 0 10px #000;*/
+  box-shadow: 0 0 10px #000;
   text-shadow: 0 0 10px #000;
   position: relative;
   background-size: cover;
@@ -26081,20 +26081,16 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   background-position: center;
   padding: 220px 0 130px;
 }
-.wave1 {
-  -webkit-mask-box-image: url(../img/home2/wave.svg);
-  -webkit-mask-box-size: cover;
-  -webkit-mask-box-repeat: no-repeat;
-  position: relative;
-  height: 400px;
-}
 .wave {
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: auto;
-  fill: #ffffff; /* Color del SVG */
+  fill: #ffffff; 
+  -webkit-mask-box-image: url('../img/home2/wave.svg'); /* Ruta a tu archivo SVG de onda */
+  -webkit-mask-box-size: cover;
+  -webkit-mask-box-repeat: no-repeat;
 }
 .breadcrumb-section .banner-content h1 {
   color: var(--white-color);
