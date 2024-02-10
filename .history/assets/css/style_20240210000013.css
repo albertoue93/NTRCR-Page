@@ -26025,52 +26025,9 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   right: 0;
   left: unset;
 }
-#buttonBtT {
-  display: inline-block;
-  background-color: var(--primary-color1);
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-}
-@media (max-width: 576px) {
-  #buttonBtT {
-    margin: 10px;
-    bottom: 10px;
-    right: 5px;
-  }
-}
-#buttonBtT::after {
-  content: "\f115";
-  font-family: bootstrap-icons;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#buttonBtT:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#buttonBtT:active {
-  background-color: #555;
-}
-#buttonBtT.show {
-  opacity: 1;
-  visibility: visible;
-}
 .breadcrumb-section {
 /*here*/
-  -webkit-mask-box-image: url(../img/home2/banner-2.png);
+  /*-webkit-mask-box-image: url(../img/home2/banner-12.png);*/
   -webkit-mask-box-size: cover;
   -webkit-mask-box-repeat: no-repeat;
   box-shadow: 0 0 10px #000;
@@ -31414,7 +31371,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
     span {
     min-width: 120px;
     max-width: 170px;
-    height: 60px;
+    height: 50px;
   }
 }
 @media (max-width: 576px) {
