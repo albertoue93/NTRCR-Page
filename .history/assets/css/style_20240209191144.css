@@ -31352,7 +31352,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   .accordion-button
   span {
   min-width: 120px;
-  max-width: 170px;
+  max-width: 120px;
   height: 60px;
   display: flex;
   align-items: center;
@@ -31368,8 +31368,8 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
     .accordion-header
     .accordion-button
     span {
-    min-width: 120px;
-    max-width: 170px;
+    min-width: 90px;
+    max-width: 90px;
     height: 50px;
   }
 }
@@ -34149,10 +34149,12 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   margin-bottom: 2px;
   border-radius: 5px;
   height: 90px;
-  overflow-y: auto;
   /*overflow: scroll;
   scrollbar-color: red orange;
   scrollbar-width: thin;*/
+}
+.blockquote::-webkit-scrollbar {
+  width: 10px;
 }
 @media (max-width: 576px) {
   .package-card-content blockquote {
