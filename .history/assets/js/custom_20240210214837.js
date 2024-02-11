@@ -3,33 +3,14 @@ AOS.init({
     easing: "slide",
     once: false,
 });
+var btn = $('#buttonBtT');
 
-
-$(document).ready(function () {
-    var backToTopBtn = $('#buttonBtT');
-    var elementoEspecifico = $('#top');
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 20) {
-            backToTopBtn.fadeIn();
-        } else {
-            backToTopBtn.fadeOut();
-        }
-    });
-
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 300) {
-            backToTopBtn.addClass('show');
-        } else {
-            backToTopBtn.removeClass('show');
-        }
-    });
-
-    backToTopBtn.click(function () {
-        $('html, body').animate({
-            scrollTop: elementoEspecifico.offset().top
-        }, 800);
-    });
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
 });
 
 

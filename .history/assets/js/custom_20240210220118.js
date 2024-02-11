@@ -17,14 +17,6 @@ $(document).ready(function () {
         }
     });
 
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 300) {
-            backToTopBtn.addClass('show');
-        } else {
-            backToTopBtn.removeClass('show');
-        }
-    });
-
     backToTopBtn.click(function () {
         $('html, body').animate({
             scrollTop: elementoEspecifico.offset().top

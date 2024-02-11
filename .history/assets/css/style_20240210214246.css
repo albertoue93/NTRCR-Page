@@ -31271,7 +31271,6 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 .package-details-area .includ-and-exclud-area {
   display: flex;
-  justify-content: space-between;
   gap: 30px;
 }
 @media (max-width: 576px) {
@@ -31280,7 +31279,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   }
 }
 .package-details-area .includ-and-exclud-area ul {
-  width: 100%;
+  width: 50%;
 }
 @media (max-width: 576px) {
   .package-details-area .includ-and-exclud-area ul {
