@@ -12836,9 +12836,9 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   }
 }
 .destination-card2.style-2 .destination-card2-content-wrap .eg-batch {
-  display: inline-flex;
+  /*display: inline-flex;
   justify-content: center;
-  /*opacity: 0;
+  opacity: 0;
   transform: scaleY(0);
   transform-origin: top;
   transition: 0.5s ease-in-out;*/
