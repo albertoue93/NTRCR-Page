@@ -486,21 +486,15 @@
                                             var encodedMessage = encodeURIComponent(message);
                                             var whatsappUrl =
                                                 walink + "?phone=" + phoneNumber + "&text=" + encodedMessage;
-                                            window.open(whatsappUrl, "_blank");
+                                            
+                                               /* window.open(whatsappUrl, "_blank");
+
+                                            return true;*/ 
+                                            window.location.href = whatsappURL;
                                             document.getElementById('contactForm').reset();
-                                            return true;
                                         }
 
-                                        var inputs = document.querySelectorAll(
-                                            ".Fcontrol input[type=text], .Fcontrol input[type=email], .Fcontrol textarea"
-                                        );
-                                        for (var i = 0; i < inputs.length; i++) {
-                                            var input = inputs[i];
-                                            input.addEventListener("input", function () {
-                                                var bg = this.value ? "show" : "none";
-                                                this.setAttribute("class", bg);
-                                            });
-                                        }                                        
+                                                                               
 
                                     </script>
                                 </div>
