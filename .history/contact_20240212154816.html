@@ -302,8 +302,10 @@
                                 /* Isi Pesan Form */
                                 var name = document.getElementById("cName").value;
                                 var email = document.getElementById("cEmail").value;
-                                var phone = document.getElementById("cPhone").value;
+                                var subject = document.getElementById("cSubject").value;
                                 var massage = document.getElementById("cMessage").value;
+                                var postLink = window.location.href;
+
                                 /* validation */
                                 var error_name = document.getElementById("error_name"),
                                     error_email = document.getElementById("error_email"),
@@ -323,20 +325,20 @@
                                 }
 
                                 if (massage == "") {
-                                    text = "Please enter your Message";
+                                    text = "Please enter your Massage";
                                     error_message.setAttribute("data-text", text);
                                     return false;
                                 }
-                                /* Message */
+                                /* Pengaturan Pesan */
                                 var message = "New message from " + name + "\n\n"; // Pesan Pembuka
                                 message += "*Name:* " + name + "\n";
                                 message += "*Email:* " + email + "\n";
-                                message += "*Phone:* " + phone + "\n";
-                                message += "*Message:* " + massage + "\n\n";
+                                message += "*Subject:* " + subject + "\n";
+                                message += "*Massage:* " + massage + "\n\n";
                                 message += "=============================";
-                                /*  Whatsapp */
+                                /* Pengaturan Whatsapp */
                                 var walink = "https://api.whatsapp.com/send",
-                                    phoneNumber = "50689324763"; // 
+                                    phoneNumber = "50689324763"; // No Whatsapp Kalian
 
                                 var encodedMessage = encodeURIComponent(message);
                                 var whatsappUrl =
@@ -356,12 +358,13 @@
                                 });
                             }
                             if (window.attachEvent) {
-                                window.attachEvent('onload', setup);
-                            } else {
-                                window.addEventListener('load', setup, false);
-                            }
+                                            window.attachEvent('onload', setup);
+                                        } else {
+                                            window.addEventListener('load', setup, false);
+                                        }
 
                         </script>
+
                     </div>
                 </div>
             </div>

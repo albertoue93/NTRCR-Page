@@ -8285,12 +8285,8 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 .package-card {
   padding: 20px;
   border-radius: 10px;
-  background: linear-gradient(
-    125deg,
-    rgba(99, 171, 69, 0.1) 0%,
-    rgba(251, 176, 59, 0.1) 100%
-  );
-    box-shadow: 0 0 10px 0 #000;
+  background-color: var(--white-color);
+  box-shadow: 0 0 10px 0 #000;
   position: relative;
   overflow: hidden;
 }

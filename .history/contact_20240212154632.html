@@ -262,35 +262,35 @@
                 <div class="col-lg-7">
                     <div class="contact-form-area">
                         <h3>Contact Us</h3>
-                        <form method="POST">
+                        <form>
                             <div class="row">
                                 <div class="col-lg-12 mb-20">
                                     <div class="form-inner">
                                         <label>Name*</label>
-                                        <input type="text" id='cName' name='name' required='required' placeholder="Daniel Scoot">
+                                        <input type="text" placeholder="Daniel Scoot">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 mb-20">
                                     <div class="form-inner">
                                         <label>Phone</label>
-                                        <input type="text" id='cPhone' name='phone' required='required' placeholder="Phone Number...">
+                                        <input type="text" placeholder="Phone Number...">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 mb-20">
                                     <div class="form-inner">
                                         <label>Email</label>
-                                        <input type="email" id='cEmail' name='email' required='required' placeholder="Email Us....">
+                                        <input type="email" placeholder="Email Us....">
                                     </div>
                                 </div>
                                 <div class="col-lg-12 mb-30">
                                     <div class="form-inner">
                                         <label>Write Your Massage*</label>
-                                        <textarea id='cMessage' name='message' required='required' placeholder="What’s on your mind"></textarea>
+                                        <textarea placeholder="What’s on your mind"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-inner">
-                                        <button onclick='redirectToWhatsApp()' class="primary-btn1 btn-hover" type="submit">Submit Now
+                                        <button class="primary-btn1 btn-hover" type="submit">Submit Now
                                         </button>
                                     </div>
                                 </div>
@@ -302,8 +302,10 @@
                                 /* Isi Pesan Form */
                                 var name = document.getElementById("cName").value;
                                 var email = document.getElementById("cEmail").value;
-                                var phone = document.getElementById("cPhone").value;
+                                var subject = document.getElementById("cSubject").value;
                                 var massage = document.getElementById("cMessage").value;
+                                var postLink = window.location.href;
+
                                 /* validation */
                                 var error_name = document.getElementById("error_name"),
                                     error_email = document.getElementById("error_email"),
@@ -323,20 +325,20 @@
                                 }
 
                                 if (massage == "") {
-                                    text = "Please enter your Message";
+                                    text = "Please enter your Massage";
                                     error_message.setAttribute("data-text", text);
                                     return false;
                                 }
-                                /* Message */
+                                /* Pengaturan Pesan */
                                 var message = "New message from " + name + "\n\n"; // Pesan Pembuka
                                 message += "*Name:* " + name + "\n";
                                 message += "*Email:* " + email + "\n";
-                                message += "*Phone:* " + phone + "\n";
-                                message += "*Message:* " + massage + "\n\n";
+                                message += "*Subject:* " + subject + "\n";
+                                message += "*Massage:* " + massage + "\n\n";
                                 message += "=============================";
-                                /*  Whatsapp */
+                                /* Pengaturan Whatsapp */
                                 var walink = "https://api.whatsapp.com/send",
-                                    phoneNumber = "50689324763"; // 
+                                    phoneNumber = "50689324763"; // No Whatsapp Kalian
 
                                 var encodedMessage = encodeURIComponent(message);
                                 var whatsappUrl =
@@ -356,12 +358,13 @@
                                 });
                             }
                             if (window.attachEvent) {
-                                window.attachEvent('onload', setup);
-                            } else {
-                                window.addEventListener('load', setup, false);
-                            }
+                                            window.attachEvent('onload', setup);
+                                        } else {
+                                            window.addEventListener('load', setup, false);
+                                        }
 
                         </script>
+
                     </div>
                 </div>
             </div>

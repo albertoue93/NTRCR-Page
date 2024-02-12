@@ -421,7 +421,7 @@
                             <div class="tab-pane fade active show" id="v-pills-booking" role="tabpanel"
                                 aria-labelledby="v-pills-booking-tab">
                                 <div class="sidebar-booking-form">
-                                    <form method="POST">
+                                    <form>
                                         <div class="form-inner mb-20">
                                             <label>Full Name <span>*</span></label>
                                             <input type="text" id='cName' name='name' required='required' placeholder="Enter your full name">
@@ -439,7 +439,7 @@
                                             <textarea id='cMessage' name='message' required='required' placeholder="Write your quiry"></textarea>
                                         </div>
                                         <div class="form-inner">
-                                            <button onclick='redirectToWhatsApp()' class="primary-btn1 two">Submit Now</button>
+                                            <button type="submit" class="primary-btn1 two">Submit Now</button>
                                         </div>
                                     </form>
                                     <script>
@@ -500,11 +500,7 @@
                                                 this.setAttribute("class", bg);
                                             });
                                         }
-                                        if (window.attachEvent) {
-                                            window.attachEvent('onload', setup);
-                                        } else {
-                                            window.addEventListener('load', setup, false);
-                                        }
+
 
                                     </script>
                                 </div>

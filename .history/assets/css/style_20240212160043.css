@@ -8285,12 +8285,8 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 .package-card {
   padding: 20px;
   border-radius: 10px;
-  background: linear-gradient(
-    125deg,
-    rgba(99, 171, 69, 0.1) 0%,
-    rgba(251, 176, 59, 0.1) 100%
-  );
-    box-shadow: 0 0 10px 0 #000;
+  background-color: var(--white-color);
+  box-shadow: 0 0 10px 0 #000;
   position: relative;
   overflow: hidden;
 }
@@ -34205,8 +34201,11 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   margin-right: 15px;
 }
 .package-card-content blockquote {
-  background-color: #faf8fb;
-  padding: 5px;
+  background: linear-gradient(
+    125deg,
+    rgba(99, 171, 69, 0.1) 0%,
+    rgba(251, 176, 59, 0.1) 100%
+  );  padding: 5px;
   position: relative;
   margin-top: 2px;
   margin-bottom: 2px;
