@@ -488,14 +488,11 @@
                                                 walink + "?phone=" + phoneNumber + "&text=" + encodedMessage;
                                             window.open(whatsappUrl, "_blank");
                                             return true;
-
-                                            window.addEventListener('load', function () {
-                                            document.getElementById('contactForm').reset();
-                                        });
-                                            
                                         }
 
-                                        
+                                        whatsappWindow.addEventListener('load', function () {
+                                            document.getElementById('contactForm').reset();
+                                        });
 
                                         var inputs = document.querySelectorAll(
                                             ".Fcontrol input[type=text], .Fcontrol input[type=email], .Fcontrol textarea"
