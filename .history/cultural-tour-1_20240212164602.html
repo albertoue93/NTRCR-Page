@@ -421,7 +421,7 @@
                             <div class="tab-pane fade active show" id="v-pills-booking" role="tabpanel"
                                 aria-labelledby="v-pills-booking-tab">
                                 <div class="sidebar-booking-form">
-                                    <form method="POST" id="contactForm">
+                                    <form id="contactForm">
                                         <div class="form-inner mb-20">
                                             <label>Full Name <span>*</span></label>
                                             <input type="text" id='cName' name='name' required='required' placeholder="Enter your full name">
@@ -444,55 +444,15 @@
                                     </form>
                                     <script>
                                         function redirectToWhatsApp() {
-                                            /* Isi Pesan Form */
-                                            var name = document.getElementById("cName").value;
-                                            var email = document.getElementById("cEmail").value;
-                                            var phone = document.getElementById("cPhone").value;
-                                            var massage = document.getElementById("cMessage").value;
-                                            /* validation */
-                                            var error_name = document.getElementById("error_name"),
-                                                error_email = document.getElementById("error_email"),
-                                                error_message = document.getElementById("error_message");
+                                            
 
-                                            var text;
-                                            if (name == "") {
-                                                text = "Please enter your name";
-                                                error_name.setAttribute("data-text", text);
-                                                return false;
-                                            }
-
-                                            if (email.indexOf("@") == -1 || email.length < 6) {
-                                                text = "Please enter valid email";
-                                                error_email.setAttribute("data-text", text);
-                                                return false;
-                                            }
-
-                                            if (massage == "") {
-                                                text = "Please enter your Message";
-                                                error_message.setAttribute("data-text", text);
-                                                return false;
-                                            }
-                                            /* Message */
-                                            var message = "New message from " + name + "\n\n"; // Pesan Pembuka
-                                            message += "*Name:* " + name + "\n";
-                                            message += "*Email:* " + email + "\n";
-                                            message += "*Phone:* " + phone + "\n";
-                                            message += "*Message:* " + massage + "\n\n";
-                                            message += "=============================";
-                                            /*  Whatsapp */
-                                            var walink = "https://api.whatsapp.com/send",
-                                                phoneNumber = "50689324763"; // 
-
-                                            var encodedMessage = encodeURIComponent(message);
-                                            var whatsappUrl =
-                                                walink + "?phone=" + phoneNumber + "&text=" + encodedMessage;
-                                            window.open(whatsappUrl, "_blank");
-                                            return true;
-                                        }
-
-                                        whatsappWindow.addEventListener('load', function () {
+                                            window.addEventListener('load', function () {
                                             document.getElementById('contactForm').reset();
                                         });
+                                            
+                                        }
+
+                                        
 
                                         var inputs = document.querySelectorAll(
                                             ".Fcontrol input[type=text], .Fcontrol input[type=email], .Fcontrol textarea"
