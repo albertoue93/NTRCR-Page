@@ -26083,7 +26083,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 320px 0 130px;
+  padding: 220px 0 130px;
 }
 .wave1 {
   -webkit-mask-box-image: url(../img/home2/wave.svg);
@@ -34719,10 +34719,9 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 .package-inner-title-section {
   display: flex;
-  /*justify-content: space-between;*/
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  
+  text-align: right;
 }
 @media (max-width: 767px) {
   .package-inner-title-section {
@@ -34744,6 +34743,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   line-height: 1;
   text-transform: capitalize;
   margin-bottom: 0;
+  text-align: right;
 }
 .package-inner-title-section .selector-and-grid {
   display: flex;
