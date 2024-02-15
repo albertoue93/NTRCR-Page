@@ -2518,7 +2518,7 @@ header.style-2 {
   max-width: 1780px;
   width: 100%;
   margin: 0 auto;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
   header.style-2 {
