@@ -91,7 +91,7 @@ for (var i = 0; i < inputs.length; i++) {
 } 
 
 (function ($) {
-    "use strict"; $('.sidebar-toggle-button').on("click", function () { $(this).toggleClass('active'); $('.dashboard-sidebar-wrapper').toggleClass('slide'); $('.main-content').toggleClass('slide'); $('.dashboard-footer').toggleClass('slide'); }); jQuery(window).on('load', function () { $(".egns-preloader").delay(1600).fadeOut("slow"); }); $('.preloader-close-btn').on("click", function () { $('.egns-preloader').addClass('close'); }); $(function () {
+    "use strict"; $('.sidebar-toggle-button').on("click", function () { $(this).toggleClass('active'); $('.dashboard-sidebar-wrapper').toggleClass('slide'); $('.main-content').toggleClass('slide'); $('.dashboard-footer').toggleClass('slide'); }); jQuery(window).on('load', function () { $(".preloader").delay(1600).fadeOut("slow"); }); $('.preloader-close-btn').on("click", function () { $('.preloader').addClass('close'); }); $(function () {
         $('.transport-type ul li').on('click', function () {
             $('.transport-type ul li').removeClass('active'); if ($(this).hasClass('privet')) { $('#forPrivet').show(); $('#forPublic').hide(); }
             else if ($(this).hasClass('public')) { $('#forPublic').show(); $('#forPrivet').hide(); }
