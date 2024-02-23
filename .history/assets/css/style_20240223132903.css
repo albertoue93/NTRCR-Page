@@ -3134,7 +3134,7 @@ header.style-2 .main-menu .hotline-area .content h6 a {
   transition: 0.5s;
 }
 header.style-2 .main-menu .hotline-area .content h6 a:hover {
-  color: gray;
+  color: var(--title-color);
 }
 @media only screen and (max-width: 991px) {
   header.style-2 .mobile-logo-area .menu-close-btn {
@@ -4930,7 +4930,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   transition: 0.5s;
 }
 .right-sidebar-menu .sidebar-bottom .hotline-area .content h6 a:hover {
-  color: var(--title-color);
+  color: gray;
 }
 .right-sidebar-menu .sidebar-bottom .email-area {
   display: flex;
@@ -31434,7 +31434,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
     span {
     min-width: 120px;
     max-width: 170px;
-    height: 70px;
+    height: 60px;
   }
 }
 @media (max-width: 576px) {
