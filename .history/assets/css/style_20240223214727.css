@@ -31123,7 +31123,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   opacity: 0;
 }
 .package-details-area .package-img-group .gallery-img-wrap a i {
-  color: var(--primary-color1);
+  color: var(--primary-color2);
   font-size: 35px;
 }
 .package-details-area .package-img-group .gallery-img-wrap button {
@@ -31149,7 +31149,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   opacity: 0;
 }
 .package-details-area .package-img-group .gallery-img-wrap button i {
-  color: var(--primary-color1);
+  color: var(--primary-color2);
   font-size: 20px;
 }
 .package-details-area .package-img-group .gallery-img-wrap:hover a {
