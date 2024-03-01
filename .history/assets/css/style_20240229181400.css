@@ -8366,7 +8366,9 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   text-transform: capitalize;
   transition: 0.5s;
 }
-
+.package-card .package-card-content.active {
+  display: block;
+}
 @media (min-width: 1200px) and (max-width: 1399px) {
   .package-card .package-card-content .card-content-top h5 a {
     font-size: 18px;
@@ -32200,7 +32202,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 .inner-pagination-area .pagination-list li .shop-pagi-btn:hover i {
   color: var(--white-color);
 }
-.pagination-list li a {
+.inner-pagination-area .pagination-list li a {
   color: rgba(16, 12, 8, 0.5);
   font-family: var(--font-jost);
   font-size: 18px;
@@ -32208,11 +32210,8 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   line-height: 1;
   text-transform: capitalize;
 }
-.pagination-list li a.active {
+.inner-pagination-area .pagination-list li a.active {
   color: var(--title-color);
-}
-.pagination-list li a:hover {
-  background-color: #f0f0f0;
 }
 .inner-pagination-area .pagination-list li:first-child {
   margin-right: 30px;

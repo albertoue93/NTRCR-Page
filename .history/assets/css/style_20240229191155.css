@@ -32201,16 +32201,16 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   color: var(--white-color);
 }
 .pagination-list li a {
-  color: rgba(16, 12, 8, 0.5);
-  font-family: var(--font-jost);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1;
-  text-transform: capitalize;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
 }
 .pagination-list li a.active {
-  color: var(--title-color);
-}
+    background-color: #007bff;
+    color: #fff;
+  }
 .pagination-list li a:hover {
   background-color: #f0f0f0;
 }
