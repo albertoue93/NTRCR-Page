@@ -35287,17 +35287,20 @@ select::-ms-expand {
       flex-direction: column;
       align-items: center;
       text-align: center;
+      font-size: 0.9rem; /* Tamaño de fuente reducido */
   }
   .nav-link .package-number {
       margin-top: 5px;
       /* Espacio entre el texto "Paquete" y el número */
   }
 }
-
 @media (max-width: 576px) {
   .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     font-size: 0.9rem; /* Tamaño de fuente reducido */
-    padding: 0.5rem 1rem; /* Espaciado interno reducido */
   }
 
   .nav-link .package-number {
