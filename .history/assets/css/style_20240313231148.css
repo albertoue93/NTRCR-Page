@@ -35300,6 +35300,7 @@ select::-ms-expand {
     align-items: center;
     text-align: center;
     font-size: 0.9rem; /* Tamaño de fuente reducido */
+
   }
 
   .nav-link .package-number {
