@@ -35297,7 +35297,7 @@ select::-ms-expand {
 @media (max-width: 576px) {
   .nav-link {
     font-size: 0.9rem; /* Tamaño de fuente reducido */
-    padding: 0.4rem 0.3rem; /* Espaciado interno reducido */
+    padding: 0.4rem 0.4rem; /* Espaciado interno reducido */
   }
 
   .nav-link .package-number {
