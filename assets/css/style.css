@@ -35259,39 +35259,23 @@ select::-ms-expand {
   }
 }
 .nav-link {
-  border: 1px solid transparent;
-  /* Elimina el borde de las pestañas */
-  border-radius: 0.25rem 0.25rem 0 0;
-  /* Borde redondeado solo en la parte superior */
+  border: 1px solid transparent; /* Elimina el borde de las pestañas */
+  border-radius: 0.25rem 0.25rem 0 0; /* Borde redondeado solo en la parte superior */
+  background-color: #f8f9fa; /* Color de fondo */
+  color: #495057; /* Color del texto */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
 }
 
 .nav-link.active {
-  border-color: #dee2e6 #dee2e6 #fff;
-  /* Color del borde activo */
+  background-color: #e9ecef; /* Color de fondo activo */
+  color: #495057; /* Color del texto activo */
 }
 
 .tab-content .tab-pane {
-  border: 1px solid #dee2e6;
-  /* Color del borde */
-  border-top: 0;
-  /* Elimina el borde superior para que coincida visualmente con la pestaña */
-  border-radius: 0 0 0.25rem 0.25rem;
-  /* Borde redondeado solo en la parte inferior */
-  padding: 20px;
-  /* Espaciado interno */
-}
-
-@media (max-width: 768px) {
-  .nav-link {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-  }
-  .nav-link .package-number {
-      margin-top: 5px;
-      /* Espacio entre el texto "Paquete" y el número */
-  }
+  border: 1px solid #dee2e6; /* Color del borde */
+  border-top: 0; /* Elimina el borde superior para que coincida visualmente con la pestaña */
+  border-radius: 0 0 0.25rem 0.25rem; /* Borde redondeado solo en la parte inferior */
+  padding: 20px; /* Espaciado interno */
 }
 
 @media (max-width: 576px) {
@@ -35300,7 +35284,41 @@ select::-ms-expand {
     padding: 0.4rem 0.3rem; /* Espaciado interno reducido */
   }
 
+  .nav-link.active {
+    background-color: #d8d8d8; /* Color de fondo activo menos llamativo */
+  }
+
+  .nav-link:hover {
+    background-color: #d8d8d8; /* Color de fondo al pasar el ratón */
+  }
+
+  .nav-link .package-title {
+    font-weight: bold; /* Texto en negrita */
+  }
+
   .nav-link .package-number {
-    margin-top: 5px; /* Espacio entre el texto "Paquete" y el número */
+    display: block; /* Mostrar en una línea diferente */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    margin-top: 5px; /* Espacio superior */
+  }
+}
+@media (max-width: 768px) {
+  .nav-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .nav-link.active {
+    background-color: #d8d8d8; /* Color de fondo activo menos llamativo */
+  }
+
+  .nav-link:hover {
+    background-color: #d8d8d8; /* Color de fondo al pasar el ratón */
+  }
+  .nav-link .package-number {
+      margin-top: 5px;
+      /* Espacio entre el texto "Paquete" y el número */
   }
 }
