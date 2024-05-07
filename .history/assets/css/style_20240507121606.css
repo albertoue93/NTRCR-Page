@@ -12371,7 +12371,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 .home2-banner-area .home2-banner-content-wrap .home2-banner-content h1 span {
   color: var(--primary-color1);
-  /*font-family: "Lemon";*/
+  font-family: "Lemon";
   display: inline-block;
   line-height: 1;
   position: relative;
@@ -12386,7 +12386,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 90%;
   height: 4px;
   background-color: var(--primary-color1);
 }

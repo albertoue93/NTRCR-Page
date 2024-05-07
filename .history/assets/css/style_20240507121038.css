@@ -5,10 +5,7 @@
   scroll-behavior: smooth;
 }
 :root {
-  --font-rubik: "Rubik", sans-serif;
-  --font-jost: "Jost", sans-serif;
-  --font-satisfy: "Satisfy", sans-serif;
-  --font-sansita: "Sansita", sans-serif;
+
   --white-color: #fff;
   --black-color: #000;
   --title-color: #100c08;
@@ -12371,7 +12368,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 .home2-banner-area .home2-banner-content-wrap .home2-banner-content h1 span {
   color: var(--primary-color1);
-  /*font-family: "Lemon";*/
+  font-family: "Lemon";
   display: inline-block;
   line-height: 1;
   position: relative;

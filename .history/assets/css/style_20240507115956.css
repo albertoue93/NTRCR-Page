@@ -12371,7 +12371,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 .home2-banner-area .home2-banner-content-wrap .home2-banner-content h1 span {
   color: var(--primary-color1);
-  /*font-family: "Lemon";*/
+  font-family: "Lemon";
   display: inline-block;
   line-height: 1;
   position: relative;
@@ -16283,7 +16283,6 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   align-items: center;
   gap: 10px;
   color: var(--white-color);
-  font-family: var(--font-satisfy);
   font-size: 23px;
   font-weight: 400;
   line-height: 1;
