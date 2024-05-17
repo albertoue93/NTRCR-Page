@@ -39,12 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.innerWidth <= 768) {
             if (window.scrollY > lastScrollY) {
                 // Scrolling down
-                socialBar.style.opacity = '0';
-                socialBar.style.transform = 'translateY(100%)';
+                socialBar.style.opacity = '1';
+                socialBar.style.bottom = '0';
             } else {
                 // Scrolling up
-                socialBar.style.opacity = '1';
-                socialBar.style.transform = 'translateY(0)';
+                socialBar.style.opacity = '0';
+                socialBar.style.bottom = '-60px';
             }
 
             // Check if we have reached the bottom of the page

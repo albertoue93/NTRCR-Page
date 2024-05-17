@@ -35324,36 +35324,36 @@ select::-ms-expand {
 }
 
 .social-sticky-bar {
-  position: fixed;
-  top: 50%;
-  right: 05px;
-  transform: translateY(-50%);
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
 }
 
 .social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  margin: 10px 0;
-  background-color: #333;
-  color: #fff;
-  border-radius: 50%;
-  transition: background-color 0.3s, transform 0.3s;
-  text-decoration: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
 }
 
 .social-icon:hover {
-  background-color: #555;
-  transform: scale(1.1);
+    background-color: #555;
+    transform: scale(1.1);
 }
 
 .social-icon i {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .social-icon.facebook:hover {
@@ -35375,7 +35375,6 @@ select::-ms-expand {
 .social-icon.youtube:hover {
   background-color: #ff0000;
 }
-
 /* Responsive design for mobile */
 @media (max-width: 768px) {
   .social-sticky-bar {
@@ -35388,7 +35387,6 @@ select::-ms-expand {
       justify-content: space-around;
       background-color: #333;
       padding: 10px 0;
-      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
   
   .social-icon {

@@ -46,12 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 socialBar.style.opacity = '1';
                 socialBar.style.transform = 'translateY(0)';
             }
-
-            // Check if we have reached the bottom of the page
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                socialBar.style.opacity = '0';
-                socialBar.style.transform = 'translateY(100%)';
-            }
             lastScrollY = window.scrollY;
         }
     });

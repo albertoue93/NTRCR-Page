@@ -39,18 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.innerWidth <= 768) {
             if (window.scrollY > lastScrollY) {
                 // Scrolling down
-                socialBar.style.opacity = '0';
-                socialBar.style.transform = 'translateY(100%)';
+                socialBar.style.opacity = '1';
+                socialBar.style.bottom = '0';
             } else {
                 // Scrolling up
-                socialBar.style.opacity = '1';
-                socialBar.style.transform = 'translateY(0)';
-            }
-
-            // Check if we have reached the bottom of the page
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
                 socialBar.style.opacity = '0';
-                socialBar.style.transform = 'translateY(100%)';
+                socialBar.style.bottom = '-60px';
             }
             lastScrollY = window.scrollY;
         }
