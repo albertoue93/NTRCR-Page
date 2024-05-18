@@ -12259,11 +12259,6 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 @media (max-width: 991px) {
   .home2-banner-area .home2-banner-wrapper {
-    min-height: 650px;
-  }
-}
-@media (max-width: 768px) {
-  .home2-banner-area .home2-banner-wrapper {
     min-height: 750px;
   }
 }
@@ -12271,7 +12266,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 0;
+  top: 05px;
   z-index: 1;
   width: 100%;
 }
@@ -12305,7 +12300,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 @media (max-width: 767px) {
   .home2-banner-area .home2-banner-content-wrap .home2-banner-content {
-    padding: 150px 0 30px;
+    padding: 120px 0 30px;
   }
 }
 .home2-banner-area .home2-banner-content-wrap .home2-banner-content .eg-tag {
