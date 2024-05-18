@@ -12259,7 +12259,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 @media (max-width: 991px) {
   .home2-banner-area .home2-banner-wrapper {
-    min-height: 750px;
+    min-height: 350px;
   }
 }
 .home2-banner-area .home2-banner-content-wrap {
