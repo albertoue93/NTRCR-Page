@@ -31687,15 +31687,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   margin-bottom: 10px;
   padding-top: 10px;
 }
-.transport-details-section .includ-and-exclud-area {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-.transport-details-section .includ-and-exclud-area ul {
-  width: 100%;
-}
-.transport-details-section .includ-and-exclud-area ul li {
+/*.transport-details-section .includ-and-exclud-area ul li {
   color: var(--text-color);
   font-family: var(--font-jost);
   font-size: 16px;
@@ -31712,7 +31704,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 .transport-details-section .includ-and-exclud-area ul.exclud li i {
   color: red;
-}
+}*/
 .transport-details-section .booking-form-wrap h4 {
   color: var(--title-color);
   text-align: center;

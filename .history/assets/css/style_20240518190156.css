@@ -31687,6 +31687,24 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   margin-bottom: 10px;
   padding-top: 10px;
 }
+/*.transport-details-section .includ-and-exclud-area ul li {
+  color: var(--text-color);
+  font-family: var(--font-jost);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: flex;
+  gap: 8px;
+  padding-top: 10px;
+}
+.transport-details-section .includ-and-exclud-area ul li i {
+  color: var(--primary-color1);
+  font-weight: 400;
+  font-size: 13px;
+}
+.transport-details-section .includ-and-exclud-area ul.exclud li i {
+  color: red;
+}*/
 .transport-details-section .includ-and-exclud-area {
   display: flex;
   justify-content: space-between;
