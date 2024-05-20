@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-function filterResults() {
+/*function filterResults() {
     const input = document.getElementById('search-input');
     const filter = input.value.toLowerCase();
     const packageList = document.getElementById('package-list');
@@ -75,7 +75,7 @@ function filterResults() {
     }
 
     document.getElementById('result-count').innerText = `Showing ${count} result${count !== 1 ? 's' : ''}`;
-}
+}*/
 
 function redirectToWhatsApp() {
     /* Isi Pesan Form */

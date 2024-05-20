@@ -187,18 +187,8 @@
             <div class="row g-lg-4 gy-5">
                 <div class="col-lg-12">
                     <div class="package-inner-title-section mb-40">
-                        <div class="search-container">
-                            <input type="text" id="search-input" placeholder="Search Cultural Tour..." onkeyup="filterResults()">
-                            <button class="search-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-search">
-                                    <circle cx="11" cy="11" r="8"></circle>
-                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                </svg>
-                            </button>
-                        </div>
-                        <p id="result-count">Showing 3 results</p>
+                        <input type="text" id="search-input" placeholder="Search Tou..." onkeyup="filterResults()">
+                        <p id="result-count">Showing 1–3 of 3 results</p>
                     </div>
                     <div class="list-grid-product-wrap mb-70">
                         <div class="row gy-4" id="package-list">
@@ -566,6 +556,29 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function filterResults() {
+    const input = document.getElementById('search-input');
+    const filter = input.value.toLowerCase();
+    const packageList = document.getElementById('package-list');
+    const items = packageList.getElementsByClassName('item');
+    let count = 0;
+
+    for (let i = 0; i < items.length; i++) {
+        const title = items[i].getAttribute('data-title');
+        if (title.toLowerCase().includes(filter)) {
+            items[i].style.display = '';
+            count++;
+        } else {
+            items[i].style.display = 'none';
+        }
+    }
+
+    document.getElementById('result-count').innerText = `Showing ${count} result${count !== 1 ? 's' : ''}`;
+}
+
+    </script>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/jquery-3.7.1.min.js"></script>

@@ -26055,8 +26055,8 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 @media (max-width: 576px) {
   #buttonBtT {
     margin: 10px;
-    bottom: 50px;
-    right: 02px;
+    bottom: 30px;
+    right: 5px;
   }
 }
 #buttonBtT::after {

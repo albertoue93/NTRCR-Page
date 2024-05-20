@@ -26055,8 +26055,8 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 @media (max-width: 576px) {
   #buttonBtT {
     margin: 10px;
-    bottom: 50px;
-    right: 02px;
+    bottom: 10px;
+    right: 5px;
   }
 }
 #buttonBtT::after {
@@ -35415,59 +35415,52 @@ select::-ms-expand {
   }
 }
 
-.package-inner-title-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 .search-container {
-  display: flex;
-  align-items: center;
-  position: relative;
-  max-width: 400px;
-  flex-grow: 1;
-  margin-right: auto;
+    display: flex;
+    align-items: start;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 #search-input {
-  width: 100%;
-  padding: 10px 15px;
-  border: 2px solid #ddd;
-  border-radius: 30px;
-  outline: none;
-  transition: border-color 0.3s;
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    transition: border-color 0.3s;
 }
 
 #search-input:focus {
-  border-color: #007bff;
+    border-color: #007bff;
 }
 
 .search-button {
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
 }
 
 .search-button svg {
-  color: #333;
-  width: 20px;
-  height: 20px;
-  transition: color 0.3s;
+    color: #333;
+    width: 20px;
+    height: 20px;
+    transition: color 0.3s;
 }
 
 .search-button:hover svg {
-  color: #007bff;
+    color: #007bff;
 }
 
 #result-count {
-  margin-left: auto;
-  font-size: 1rem;
-  color: #666;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
 }

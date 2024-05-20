@@ -9,16 +9,16 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/jquery-ui.css" rel="stylesheet">
 
-    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link href="assets/css/aos.css" rel="stylesheet">
+
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
 
     <link href="assets/css/all.min.css" rel="stylesheet">
 
     <link href="assets/css/animate.min.css" rel="stylesheet">
 
     <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link href="assets/css/fontawesome.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -38,7 +38,7 @@
     <link rel="icon" type="image/svg+xml" href="assets/img/NTRCR-Logo.png" sizes="270x307" />
     <link rel="apple-touch-icon" type="image/svg+xml" sizes="270x307" href="assets/img/NTRCR-Logo.png" />
 
-    <title>Water Tours - New Travels Reasons CR</title>
+    <title>Land Tours - New Travels Reasons CR</title>
     <link rel="icon" href="assets/img/sm-logo.svg" type="image/gif" sizes="20x20">
 </head>
 
@@ -92,14 +92,16 @@
                 <li class="menu-item-has-children active">
                     <a href="tours.html" class="drop-down">Tours</a><i class="bi bi-plus dropdown-icon"></i>
                     <ul class="sub-menu">
-                        <li><a href="cultural-tours.html">Cultural Tours</a></li>
+                        <li>
+                            <a href="cultural-tours.html">Cultural Tours</a>
+                        </li>
                         <li>
                             <a href="fortuna-tours.html">Fortuna Tours</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="land-tours.html">Land Tours</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="water-tours.html">Water Tours</a>
                         </li>
                     </ul>
@@ -162,7 +164,7 @@
     </header>
 
     <div class="breadcrumb-section"
-        style="background-image: linear-gradient(270deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.3) 101.02%), url(assets/img/innerpage/catamaran-banner-bg.jpg);">
+        style="background-image: linear-gradient(270deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.3) 101.02%), url(assets/img/innerpage/land-banner-bg.jpg);">
         <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill-opacity="1"
                 d="M0,288L120,272C240,256,480,224,720,224C960,224,1200,256,1320,272L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
@@ -172,10 +174,10 @@
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-center">
                     <div class="banner-content">
-                        <h1>Water Tours</h1>
+                        <h1>Land Tours</h1>
                         <ul class="breadcrumb-list">
                             <li><a href="index.html">Home</a></li>
-                            <li>Water Tours</li>
+                            <li>Land Tours</li>
                         </ul>
                     </div>
                 </div>
@@ -183,14 +185,15 @@
         </div>
     </div>
 
-    <div class="package-grid-with-sidebar-section pt-80 mb-120" id="top">
+    <div class="package-grid-with-sidebar-section pt-80 mb-120">
         <div class="container">
             <div class="row g-lg-4 gy-5">
                 <div class="col-lg-12">
+                    
                     <div class="list-grid-product-wrap mb-70 page">
                         <div class="package-inner-title-section mb-40">
                             <div class="search-container">
-                                <input type="text" id="search-input" placeholder="Search Water Tour..." onkeyup="filterResults()">
+                                <input type="text" id="search-input" placeholder="Search..." onkeyup="filterResults()">
                                 <button class="search-button">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -200,15 +203,15 @@
                                     </svg>
                                 </button>
                             </div>
-                            <p id="result-count">Showing 14 results</p>
+                            <p id="result-count">Showing 1–8 of 16 results</p>
                         </div>
+                        
                         <div class="row gy-4" id="package-list">
-                            
-                            <div class="col-md-4 item" data-title="Flamingo Catamarán Adventure.">
+                            <div class="col-md-4 item" data-title="Adventures Dinopark.">
                                 <div class="package-card">
                                     <div class="package-card-img-wrap">
-                                        <a href="water/flamingo-catamaran-adventure.html" class="card-img"><img
-                                                src="assets/img/home1/dolphin-tour.jpg" alt></a>
+                                        <a href="land/land-tour-1.html" class="card-img"><img
+                                                src="assets/img/home1/dinopark.jpg" alt></a>
                                         <div class="batch">
 
                                             <div class="location">
@@ -218,405 +221,7 @@
                                                         d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
                                                 </svg>
                                                 <ul class="location-list">
-                                                    <li><a>Flamingo Beach, Guanacaste, Costa Rica</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="package-card-content">
-                                        <div class="card-content-top">
-                                            <h5><a href="water/flamingo-catamaran-adventure.html">Flamingo Catamarán
-                                                    Adventure.</a></h5>
-                                            <blockquote>
-                                                <p>Enjoy this wonderful adventures in this Catamarán tours in Flamingo,
-                                                    Guanacaste.</p>
-                                            </blockquote>
-                                        </div>
-                                        <div class="card-content-bottom">
-                                            <div class="price-area">
-                                            </div>
-                                            <a href="water/flamingo-catamaran-adventure.html" class="primary-btn1">Read
-                                                More
-                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
-                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                                    xml:space="preserve">
-
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-
-                                                    <g id="SVGRepo_iconCarrier">
-                                                        <g id="next">
-                                                            <g>
-                                                                <polygon
-                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
-                                                            </g>
-                                                        </g>
-                                                    </g>
-
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 item" data-title="Golfo De Nicoya Boat Tour.">
-                                <div class="package-card">
-                                    <div class="package-card-img-wrap">
-                                        <a href="water/water-tour-3.html" class="card-img"><img
-                                                src="assets/img/home1/golfo-boat-bg.jpg" alt></a>
-                                        <div class="batch">
-
-                                            <div class="location">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                    viewBox="0 0 18 18">
-                                                    <path
-                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
-                                                </svg>
-                                                <ul class="location-list">
-                                                    <li><a href="water/water-tour-3.html">Nicoya, Guanacaste, Costa
-                                                            Rica</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="package-card-content">
-                                        <div class="card-content-top">
-                                            <h5><a href="water/water-tour-3.html">Golfo De Nicoya Boat Tour.</a></h5>
-                                            <blockquote>
-                                                <p>With this small historical tour we will review the Nicoya Guanacaste
-                                                    park and we will see the church of San Blas de Nicoya.</p>
-                                            </blockquote>
-                                        </div>
-                                        <div class="card-content-bottom">
-                                            <div class="price-area">
-                                            </div>
-                                            <a href="water/water-tour-3.html" class="primary-btn1">Read More
-                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
-                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                                    xml:space="preserve">
-
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-
-                                                    <g id="SVGRepo_iconCarrier">
-                                                        <g id="next">
-                                                            <g>
-                                                                <polygon
-                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
-                                                            </g>
-                                                        </g>
-                                                    </g>
-
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 item" data-title="Hacienda El Viejo Boat Tours.">
-                                <div class="package-card">
-                                    <div class="package-card-img-wrap">
-                                        <a href="water/water-tour-4.html" class="card-img"><img
-                                                src="assets/img/home1/el-viejo-boat-bg.jpg" alt></a>
-                                        <div class="batch">
-
-                                            <div class="location">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                    viewBox="0 0 18 18">
-                                                    <path
-                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
-                                                </svg>
-                                                <ul class="location-list">
-                                                    <li><a href="water/water-tour-4.html">Filadelfia, Guanacaste, Costa
-                                                            Rica</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="package-card-content">
-                                        <div class="card-content-top">
-                                            <h5><a href="water/water-tour-4.html">Hacienda El Viejo Boat Tours.</a></h5>
-                                            <blockquote>
-                                                <p>This magnificent 5,000-acre Private Wildlife Refuge and Sugar Farm
-                                                    along the Tempisque River.</p>
-                                            </blockquote>
-                                        </div>
-                                        <div class="card-content-bottom">
-                                            <div class="price-area">
-                                            </div>
-                                            <a href="water/water-tour-4.html" class="primary-btn1">Read More
-                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
-                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                                    xml:space="preserve">
-
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-
-                                                    <g id="SVGRepo_iconCarrier">
-                                                        <g id="next">
-                                                            <g>
-                                                                <polygon
-                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
-                                                            </g>
-                                                        </g>
-                                                    </g>
-
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 item" data-title="Jet Ski.">
-                                <div class="package-card">
-                                    <div class="package-card-img-wrap">
-                                        <a href="water/water-tour-5.html" class="card-img"><img
-                                                src="assets/img/home1/jetski.jpg" alt></a>
-                                        <div class="batch">
-
-                                            <div class="location">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                    viewBox="0 0 18 18">
-                                                    <path
-                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
-                                                </svg>
-                                                <ul class="location-list">
-                                                    <li><a href="water/water-tour-5.html">Peninsula Papagayo</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="package-card-content">
-                                        <div class="card-content-top">
-                                            <h5><a href="water/water-tour-5.html">Jet Ski.</a></h5>
-                                            <blockquote>
-                                                <p>You can enjoy a tour of the ocean, on jet skis through the sectors of
-                                                    Peninsula de Papagayo.</p>
-                                            </blockquote>
-                                        </div>
-                                        <div class="card-content-bottom">
-                                            <div class="price-area">
-                                            </div>
-                                            <a href="water/water-tour-5.html" class="primary-btn1">Read More
-                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
-                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                                    xml:space="preserve">
-
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-
-                                                    <g id="SVGRepo_iconCarrier">
-                                                        <g id="next">
-                                                            <g>
-                                                                <polygon
-                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
-                                                            </g>
-                                                        </g>
-                                                    </g>
-
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 item" data-title="La Leona Waterfall Tour.">
-                                <div class="package-card">
-                                    <div class="package-card-img-wrap">
-                                        <a href="water/water-tour-12.html" class="card-img"><img
-                                                src="assets/img/home1/la-leona-bg.jpg" alt></a>
-                                        <div class="batch">
-
-                                            <div class="location">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                    viewBox="0 0 18 18">
-                                                    <path
-                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
-                                                </svg>
-                                                <ul class="location-list">
-                                                    <li><a href="water/water-tour-5.html">Peninsula Papagayo</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="package-card-content">
-                                        <div class="card-content-top">
-                                            <h5><a href="water/water-tour-12.html">La Leona Waterfall Tour.</a></h5>
-                                            <blockquote>
-                                                <p>You can enjoy a tour of the ocean, on jet skis through the sectors of
-                                                    Peninsula de Papagayo.</p>
-                                            </blockquote>
-                                        </div>
-                                        <div class="card-content-bottom">
-                                            <div class="price-area">
-                                            </div>
-                                            <a href="water/water-tour-12.html" class="primary-btn1">Read More
-                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
-                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                                    xml:space="preserve">
-
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-
-                                                    <g id="SVGRepo_iconCarrier">
-                                                        <g id="next">
-                                                            <g>
-                                                                <polygon
-                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
-                                                            </g>
-                                                        </g>
-                                                    </g>
-
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 item" data-title="Marlin Del Rey Catamarán Tour (Coco Beach).">
-                                <div class="package-card">
-                                    <div class="package-card-img-wrap">
-                                        <a href="water/marlin-del-rey-coco.html" class="card-img"><img
-                                                src="assets/img/home1/marlin-coco.jpg" alt></a>
-                                        <div class="batch">
-
-                                            <div class="location">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                    viewBox="0 0 18 18">
-                                                    <path
-                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
-                                                </svg>
-                                                <ul class="location-list">
-                                                    <li><a>Coco Beach, Guanacaste, Costa Rica</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="package-card-content">
-                                        <div class="card-content-top">
-                                            <h5><a href="water/marlin-del-rey-coco.html">Marlin del Rey Catamarán Tour
-                                                    (Coco Beach).</a></h5>
-                                            <blockquote>
-                                                <p>Enjoy this wonderful adventures in this Catamarán tours in Coco
-                                                    Beach, Guanacaste.</p>
-                                            </blockquote>
-                                        </div>
-                                        <div class="card-content-bottom">
-                                            <div class="price-area">
-                                            </div>
-                                            <a href="water/marlin-del-rey-coco.html" class="primary-btn1">Read More
-                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
-                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                                    xml:space="preserve">
-
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-
-                                                    <g id="SVGRepo_iconCarrier">
-                                                        <g id="next">
-                                                            <g>
-                                                                <polygon
-                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
-                                                            </g>
-                                                        </g>
-                                                    </g>
-
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 item" data-title="Marlin Del Rey Catamarán Tour (Tamarindo).">
-                                <div class="package-card">
-                                    <div class="package-card-img-wrap">
-                                        <a href="water/marlin-del-rey-tamarindo.html" class="card-img"><img
-                                                src="assets/img/home1/marlin-tamarindo.jpg" alt></a>
-                                        <div class="batch">
-
-                                            <div class="location">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                    viewBox="0 0 18 18">
-                                                    <path
-                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
-                                                </svg>
-                                                <ul class="location-list">
-                                                    <li><a>Tamarindo Beach, Guanacaste, Costa Rica</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="package-card-content">
-                                        <div class="card-content-top">
-                                            <h5><a href="water/marlin-del-rey-tamarindo.html">Marlin del Rey Catamarán
-                                                    Tour (Tamarindo).</a></h5>
-                                            <blockquote>
-                                                <p>Enjoy this wonderful adventures in this Catamarán tours in Tamarindo
-                                                    Beach, Guanacaste.</p>
-                                            </blockquote>
-                                        </div>
-                                        <div class="card-content-bottom">
-                                            <div class="price-area">
-                                            </div>
-                                            <a href="water/marlin-del-rey-tamarindo.html" class="primary-btn1">Read More
-                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
-                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                                    xml:space="preserve">
-
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-
-                                                    <g id="SVGRepo_iconCarrier">
-                                                        <g id="next">
-                                                            <g>
-                                                                <polygon
-                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
-                                                            </g>
-                                                        </g>
-                                                    </g>
-
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 item" data-title="Palo Verde Boat Tours (Dalila's).">
-                                <div class="package-card">
-                                    <div class="package-card-img-wrap">
-                                        <a href="water/water-tour-6.html" class="card-img"><img
-                                                src="assets/img/home1/palo-verde-tour.jpg" alt></a>
-                                        <div class="batch">
-
-                                            <div class="location">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                    viewBox="0 0 18 18">
-                                                    <path
-                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
-                                                </svg>
-                                                <ul class="location-list">
-                                                    <li><a href="water/water-tour-6.html">Palo Verde National Park</a>
+                                                    <li><a href="land/land-tour-1">Rincón de la Vieja, Guanacaste</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -624,17 +229,17 @@
                                     </div>
                                     <div class="package-card-content">
                                         <div class="card-content-top">
-                                            <h5><a href="water/water-tour-6.html">Palo Verde Boat Tours (Dalila's).</a>
-                                            </h5>
+                                            <h5><a href="land/land-tour-1">Adventures Dinopark.</a></h5>
                                             <blockquote>
-                                                <p>At this site we will enjoy bird watching such as: pink spatula heron,
-                                                    tiger heron, and other animals.</p>
+                                                <p>Leave the dry savannah behind as spectacular scenery unfolds in the
+                                                    lush rainforest and of course the volcano and blue rivers.</p>
                                             </blockquote>
                                         </div>
                                         <div class="card-content-bottom">
                                             <div class="price-area">
+
                                             </div>
-                                            <a href="water/water-tour-6.html" class="primary-btn1">Read More
+                                            <a href="land/land-tour-1.html" class="primary-btn1">Read More
                                                 <svg fill="#000000" height="18px" width="18px" version="1.1"
                                                     id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
@@ -660,18 +265,12 @@
                                     </div>
                                 </div>
                             </div>
-                       <!--</div>
-                    </div>
-                    <div class="list-grid-product-wrap mb-70 page">
-                        <div class="row gy-4">
-                            <div class="package-inner-title-section mb-40">
-                                <p>Showing 9–14 of 14 results</p>
-                            </div>-->
-                            <div class="col-md-4 item" data-title="Rancho Los Coyotes Boat Tours.">
+
+                            <div class="col-md-4 item" data-title="Adventures And Waterfalls.">
                                 <div class="package-card">
                                     <div class="package-card-img-wrap">
-                                        <a href="water/water-tour-7.html" class="card-img"><img
-                                                src="assets/img/home1/rancho-los-coyotes.jpg" alt></a>
+                                        <a href="land/adventures-and-waterfalls.html" class="card-img"><img
+                                                src="assets/img/home1/waterfalls.jpg" alt></a>
                                         <div class="batch">
 
                                             <div class="location">
@@ -681,84 +280,27 @@
                                                         d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
                                                 </svg>
                                                 <ul class="location-list">
-                                                    <li><a href="water/water-tour-7.html">Ortega, Guanacaste, Costa
-                                                            Rica</a></li>
+                                                    <li><a href="package-grid.html">Guanacaste, Costa Rica<a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="package-card-content">
                                         <div class="card-content-top">
-                                            <h5><a href="water/water-tour-7.html">Rancho Los Coyotes Boat Tours.</a>
-                                            </h5>
+                                            <h5><a href="land/adventures-and-waterfalls.html">Adventures And
+                                                    Waterfalls.</a></h5>
                                             <blockquote>
-                                                <p>This option we can take a boat tour of 1:30 minutes, to enjoy an
-                                                    exotic sighting of resident and migratory birds. As well as observe
-                                                    howler monkeys, white-faced monkeys, crocodiles and much more.</p>
-                                            </blockquote>
-                                        </div>
-                                        <div class="card-content-bottom">
-                                            <div class="price-area">
-                                            </div>
-                                            <a href="water/water-tour-7.html" class="primary-btn1">Read More
-                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
-                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                                    xml:space="preserve">
-
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-
-                                                    <g id="SVGRepo_iconCarrier">
-                                                        <g id="next">
-                                                            <g>
-                                                                <polygon
-                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
-                                                            </g>
-                                                        </g>
-                                                    </g>
-
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 item" data-title="Sarapiqui Boat Tours.">
-                                <div class="package-card">
-                                    <div class="package-card-img-wrap">
-                                        <a href="water/water-tour-8.html" class="card-img"><img
-                                                src="assets/img/home1/sarapiqui-boat.jpg" alt></a>
-                                        <div class="batch">
-
-                                            <div class="location">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                    viewBox="0 0 18 18">
-                                                    <path
-                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
-                                                </svg>
-                                                <ul class="location-list">
-                                                    <li><a href="water/water-tour-8.html">Sarapiquí, Heredia, Costa
-                                                            Rica</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="package-card-content">
-                                        <div class="card-content-top">
-                                            <h5><a href="water/water-tour-8.html">Sarapiquí Boat Tours.</a></h5>
-                                            <blockquote>
-                                                <p>If you are one of those who love to travel, get to know different
-                                                    places in a short time and adventure, this may be your opportunity.
+                                                <p>Exceptionally located in the dry tropical forest, next to the Rincón
+                                                    de La Vieja National Park.
+                                                    A site of much adventure below you can see the options we have for
+                                                    you.
                                                 </p>
                                             </blockquote>
                                         </div>
                                         <div class="card-content-bottom">
                                             <div class="price-area">
                                             </div>
-                                            <a href="water/water-tour-8.html" class="primary-btn1">Read More
+                                            <a href="land/adventures-and-waterfalls.html" class="primary-btn1">Read More
                                                 <svg fill="#000000" height="18px" width="18px" version="1.1"
                                                     id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
@@ -784,11 +326,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 item" data-title="Sarapiqui Rafting Tours.">
+
+                            <div class="col-md-4 item" data-title="A.T.V Tours.">
                                 <div class="package-card">
                                     <div class="package-card-img-wrap">
-                                        <a href="water/sarapiqui-rafting.html" class="card-img"><img
-                                                src="assets/img/home1/sarapiqui-rafting.jpg" alt></a>
+                                        <a href="land/a-t-v-tours.html" class="card-img"><img
+                                                src="assets/img/home1/atv-tours.jpg" alt></a>
                                         <div class="batch">
 
                                             <div class="location">
@@ -798,7 +341,240 @@
                                                         d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
                                                 </svg>
                                                 <ul class="location-list">
-                                                    <li><a href="water/sarapiqui-rafting.html">Sarapiquí, Heredia, Costa
+                                                    <li><a href="package-grid.html">Guanacaste, Costa Rica</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="package-card-content">
+                                        <div class="card-content-top">
+                                            <h5><a href="land/a-t-v-tours.html">A.T.V Tours.</a></h5>
+                                            <blockquote>
+                                                <p>Experience the thrill of off-road adventure with our ATV tours!</p>
+                                            </blockquote>
+                                        </div>
+                                        <div class="card-content-bottom">
+                                            <div class="price-area">
+                                            </div>
+                                            <a href="land/a-t-v-tours.html" class="primary-btn1">Read More
+                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
+                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                                                    xml:space="preserve">
+
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <g id="next">
+                                                            <g>
+                                                                <polygon
+                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 item" data-title="Barra Honda National Park.">
+                                <div class="package-card">
+                                    <div class="package-card-img-wrap">
+                                        <a href="land/barra-honda.html" class="card-img"><img
+                                                src="assets/img/home1/barra-honda.jpg" alt></a>
+                                        <div class="batch">
+
+                                            <div class="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18">
+                                                    <path
+                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
+                                                </svg>
+                                                <ul class="location-list">
+                                                    <li><a href="package-grid.html">Nicoya, Guanacaste, Costa Rica</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="package-card-content">
+                                        <div class="card-content-top">
+                                            <h5><a href="land/barra-honda.html">Barra Honda National Park.</a></h5>
+                                            <blockquote>
+                                                <p>It is the only park in Costa Rica that has a complex of underground
+                                                    caverns, and with Karstic morphology (stalagmites
+                                                    and stalactites are usually formed).</p>
+                                            </blockquote>
+                                        </div>
+                                        <div class="card-content-bottom">
+                                            <!--<div class="price-area">
+                                            </div>-->
+                                            <a href="land/barra-honda.html" class="primary-btn1">Read More
+                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
+                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                                                    xml:space="preserve">
+
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <g id="next">
+                                                            <g>
+                                                                <polygon
+                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 item" data-title="Bird Watching Tour.">
+                                <div class="package-card">
+                                    <div class="package-card-img-wrap">
+                                        <a href="land/bird-watching-tour.html" class="card-img"><img
+                                                src="assets/img/home1/bird-watching.jpg" alt></a>
+                                        <div class="batch">
+
+                                            <div class="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18">
+                                                    <path
+                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
+                                                </svg>
+                                                <ul class="location-list">
+                                                    <li><a href="package-grid.html">Costa Rica</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="package-card-content">
+                                        <div class="card-content-top">
+                                            <h5><a href="land/bird-watching-tour.html">Bird Watching Tour.</a></h5>
+                                            <blockquote>
+                                                <p>This tour is completely private in search of sightings of different
+                                                    species of birds, depending on the place where
+                                                    our clients are for their comfort or according to the sighting
+                                                    expectations they desire.</p>
+                                            </blockquote>
+                                        </div>
+                                        <div class="card-content-bottom">
+                                            <!--<div class="price-area">
+                                            </div>-->
+                                            <a href="land/bird-watching-tour.html" class="primary-btn1">Read More
+                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
+                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                                                    xml:space="preserve">
+
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <g id="next">
+                                                            <g>
+                                                                <polygon
+                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 item" data-title="El Porvenir Tour.">
+                                <div class="package-card">
+                                    <div class="package-card-img-wrap">
+                                        <a href="land/el-porvenir-tour.html" class="card-img"><img
+                                                src="assets/img/home1/el-porvenir.jpg" alt></a>
+                                        <div class="batch">
+
+                                            <div class="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18">
+                                                    <path
+                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
+                                                </svg>
+                                                <ul class="location-list">
+                                                    <li><a href="package-grid.html">La Cruz, Guanacaste, Costa Rica</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="package-card-content">
+                                        <div class="card-content-top">
+                                            <h5><a href="land/el-porvenir-tour.html">El Porvenir Tour.</a></h5>
+                                            <blockquote>
+                                                <p>It is the only park in Costa Rica that has a complex of underground
+                                                    caverns, and with Karstic morphology (stalagmites
+                                                    and stalactites are usually formed).</p>
+                                            </blockquote>
+                                        </div>
+                                        <div class="card-content-bottom">
+                                            <div class="price-area">
+                                            </div>
+                                            <a href="land/el-porvenir-tour.html" class="primary-btn1">Read More
+                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
+                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                                                    xml:space="preserve">
+
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <g id="next">
+                                                            <g>
+                                                                <polygon
+                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 item" data-title="Full Day Eco Adventure Park.">
+                                <div class="package-card">
+                                    <div class="package-card-img-wrap">
+                                        <a href="land/eco-adventure-park.html" class="card-img"><img
+                                                src="assets/img/home1/eco-adventure.jpg" alt></a>
+                                        <div class="batch">
+
+                                            <div class="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18">
+                                                    <path
+                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
+                                                </svg>
+                                                <ul class="location-list">
+                                                    <li><a href="package-grid.html">Cañas Dulce, Guanascaste, Costa
                                                             Rica</a></li>
                                                 </ul>
                                             </div>
@@ -806,19 +582,17 @@
                                     </div>
                                     <div class="package-card-content">
                                         <div class="card-content-top">
-                                            <h5><a href="water/sarapiqui-rafting.html">Sarapiquí Rafting Tours.</a></h5>
+                                            <h5><a href="land/eco-adventure-park.html">Full Day Eco Adventure Park.</a>
+                                            </h5>
                                             <blockquote>
-                                                <p>This tours offers exhilarating rafting adventures through the
-                                                    stunning Sarapiquí River in Costa Rica. With
-                                                    experienced guides and top-notch equipment, they provide thrilling
-                                                    experiences for adventurers of all levels,
-                                                    surrounded by breathtaking rainforest scenery.</p>
+                                                <p>An experience full of nature, culture, adventure, wellness and
+                                                    sustainability in one day, in the same place.</p>
                                             </blockquote>
                                         </div>
                                         <div class="card-content-bottom">
                                             <div class="price-area">
                                             </div>
-                                            <a href="water/sarapiqui-rafting.html" class="primary-btn1">Read More
+                                            <a href="land/eco-adventure-park.html" class="primary-btn1">Read More
                                                 <svg fill="#000000" height="18px" width="18px" version="1.1"
                                                     id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
@@ -844,11 +618,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 item" data-title="Sport Fishing.">
+
+                            <div class="col-md-4 item" data-title="Honeymoon Travel Guanacaste.">
                                 <div class="package-card">
                                     <div class="package-card-img-wrap">
-                                        <a href="water/water-tour-9.html" class="card-img"><img
-                                                src="assets/img/home1/sport-fishing.jpg" alt></a>
+                                        <a href="land/honeymoon-travel.html" class="card-img"><img
+                                                src="assets/img/home1/honeymoon.jpg" alt></a>
                                         <div class="batch">
 
                                             <div class="location">
@@ -858,25 +633,25 @@
                                                         d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
                                                 </svg>
                                                 <ul class="location-list">
-                                                    <li><a href="water/water-tour-9.html">Golfo de Papagayo, Guanacaste,
-                                                            Costa Rica</a></li>
+                                                    <li><a href="package-grid.html">Santa Cruz, Guanacaste, Costa Rica
+                                                        </a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="package-card-content">
                                         <div class="card-content-top">
-                                            <h5><a href="water/water-tour-9.html">Sport Fishing.</a></h5>
+                                            <h5><a href="land/honeymoon-travel.html">Honeymoon Travel Guanacaste.</a>
+                                            </h5>
                                             <blockquote>
-                                                <p>We offer our clients a good service where you can enjoy a spectacular
-                                                    adventure in the ocean, and that magic of the sport of fishing in
-                                                    the Golfo Papagayo.</p>
+                                                <p>A spectacular place of wellness in the dry tropical forest, with a
+                                                    great view of the Pacific Ocean.</p>
                                             </blockquote>
                                         </div>
                                         <div class="card-content-bottom">
                                             <div class="price-area">
                                             </div>
-                                            <a href="water/water-tour-9.html" class="primary-btn1">Read More
+                                            <a href="land/honeymoon-travel.html" class="primary-btn1">Read More
                                                 <svg fill="#000000" height="18px" width="18px" version="1.1"
                                                     id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
@@ -902,11 +677,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 item" data-title="Tenorio Floating.">
+                        <!--</div>
+                    </div>
+
+                    <div class="list-grid-product-wrap mb-70 page">
+                        <div class="row gy-4">
+                            <div class="package-inner-title-section mb-40">
+                                <p>Showing 9–16 of 16 results</p>
+                            </div>-->
+                            <div class="col-md-4 item" data-title="Las Hornillas - Miravalles Volcano.">
                                 <div class="package-card">
                                     <div class="package-card-img-wrap">
-                                        <a href="water/water-tour-10.html" class="card-img"><img
-                                                src="assets/img/home1/tenorio-tour.jpg" alt></a>
+                                        <a href="land/las-hornillas-miravalles.html" class="card-img"><img
+                                                src="assets/img/home1/las-hornillas.jpg" alt></a>
                                         <div class="batch">
 
                                             <div class="location">
@@ -916,25 +699,26 @@
                                                         d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
                                                 </svg>
                                                 <ul class="location-list">
-                                                    <li><a href="water/water-tour-10.html">Tenorio Volcano National
-                                                            Park</a></li>
+                                                    <li><a href="package-grid.html">Bagaces, Guanascaste, Costa Rica</a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="package-card-content">
                                         <div class="card-content-top">
-                                            <h5><a href="water/water-tour-10.html">Tenorio Floating.</a></h5>
+                                            <h5><a href="land/las-hornillas-miravalles.html">Las Hornillas - Miravalles
+                                                    Volcano.</a></h5>
                                             <blockquote>
-                                                <p>In this option you will be able to enjoy the tranquility of the lower
-                                                    section of the Tenorio River in this tranquil floating safari for
-                                                    nature lovers.</p>
+                                                <p>It is a site with a spectacular view of the Miravalles Volcano, with
+                                                    volcanic activity on its slopes. Its perfect
+                                                    combination between nature and hike in secondary craters.</p>
                                             </blockquote>
                                         </div>
                                         <div class="card-content-bottom">
                                             <div class="price-area">
                                             </div>
-                                            <a href="water/water-tour-10.html" class="primary-btn1">Read More
+                                            <a href="land/las-hornillas-miravalles.html" class="primary-btn1">Read More
                                                 <svg fill="#000000" height="18px" width="18px" version="1.1"
                                                     id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
@@ -960,11 +744,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 item" data-title="White Water Rafting Tenorio Adventure.">
+                            <div class="col-md-4 item" data-title="Mega Combo Cañon De La Vieja.">
                                 <div class="package-card">
                                     <div class="package-card-img-wrap">
-                                        <a href="water/water-tour-11.html" class="card-img"><img
-                                                src="assets/img/home1/white-water-rafting.jpg" alt></a>
+                                        <a href="land/cañon-de-la-vieja.html" class="card-img"><img
+                                                src="assets/img/home1/cañon-de-la-vieja.jpg" alt></a>
                                         <div class="batch">
 
                                             <div class="location">
@@ -974,7 +758,182 @@
                                                         d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
                                                 </svg>
                                                 <ul class="location-list">
-                                                    <li><a href="water/water-tour-11.html">Cañas, Guanacaste, Costa
+                                                    <li><a href="package-grid.html">Liberia, Guanacaste, Costa Rica</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="package-card-content">
+                                        <div class="card-content-top">
+                                            <h5><a href="land/cañon-de-la-vieja.html">Mega Combo Cañon De La Vieja.</a>
+                                            </h5>
+                                            <blockquote>
+                                                <p>Discover the ultimate adventure with this thrilling blend of Costa
+                                                    Rica's finest activities in
+                                                    Guanacaste's breathtaking landscape!
+                                                </p>
+                                            </blockquote>
+                                        </div>
+                                        <div class="card-content-bottom">
+                                            <div class="price-area">
+                                            </div>
+                                            <a href="land/cañon-de-la-vieja.html" class="primary-btn1">Read More
+                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
+                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                                                    xml:space="preserve">
+
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <g id="next">
+                                                            <g>
+                                                                <polygon
+                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item" data-title="Monteverde Cloud Forest.">
+                                <div class="package-card">
+                                    <div class="package-card-img-wrap">
+                                        <a href="land/monteverde-cloud.html" class="card-img"><img
+                                                src="assets/img/home1/monteverde.jpg" alt></a>
+                                        <div class="batch">
+
+                                            <div class="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18">
+                                                    <path
+                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
+                                                </svg>
+                                                <ul class="location-list">
+                                                    <li><a href="package-grid.html">Monteverde, Costa Rica</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="package-card-content">
+                                        <div class="card-content-top">
+                                            <h5><a href="land/monteverde-cloud.html">Monteverde Cloud Forest.</a></h5>
+                                            <blockquote>
+                                                <p>Discover a mountainous city in the northwest, famous for its
+                                                    biodiverse forests.
+                                                </p>
+                                            </blockquote>
+                                        </div>
+                                        <div class="card-content-bottom">
+                                            <div class="price-area">
+                                            </div>
+                                            <a href="land/monteverde-cloud.html" class="primary-btn1">Read More
+                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
+                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                                                    xml:space="preserve">
+
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <g id="next">
+                                                            <g>
+                                                                <polygon
+                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item" data-aos="fade-up">
+                                <div class="package-card">
+                                    <div class="package-card-img-wrap">
+                                        <a href="land/overnight-tour.html" class="card-img"><img
+                                                src="assets/img/home1/overnight.jpg" alt></a>
+                                        <div class="batch">
+
+                                            <div class="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18">
+                                                    <path
+                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
+                                                </svg>
+                                                <ul class="location-list">
+                                                    <li><a href="package-grid.html">Costa Rica</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="package-card-content">
+                                        <div class="card-content-top">
+                                            <h5><a href="land/overnight-tour.html">Overnight Tour.</a></h5>
+                                            <blockquote>
+                                                <p>This night walk our company offers in Fortuna Arenal Místico Park,
+                                                    Mirador el Silencio.
+                                                    Monteverde (biological reserves) Bijagua rainforest (Tapir Valley,
+                                                    Frog's Paradise, Finca Verde Lodge).</p>
+                                            </blockquote>
+                                        </div>
+                                        <div class="card-content-bottom">
+                                            <div class="price-area">
+                                            </div>
+                                            <a href="land/overnight-tour.html" class="primary-btn1">Read More
+                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
+                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                                                    xml:space="preserve">
+
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <g id="next">
+                                                            <g>
+                                                                <polygon
+                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item" data-aos="fade-up">
+                                <div class="package-card">
+                                    <div class="package-card-img-wrap">
+                                        <a href="land/adventure-and-hot-spring.html" class="card-img"><img
+                                                src="assets/img/home1/hot-springs.jpg" alt></a>
+                                        <div class="batch">
+
+                                            <div class="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18">
+                                                    <path
+                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
+                                                </svg>
+                                                <ul class="location-list">
+                                                    <li><a href="package-grid.html">Cañas Dulces, Guanacaste, Costa
                                                             Rica</a></li>
                                                 </ul>
                                             </div>
@@ -982,18 +941,194 @@
                                     </div>
                                     <div class="package-card-content">
                                         <div class="card-content-top">
-                                            <h5><a href="water/water-tour-11.html">White Water Rafting Tenorio
-                                                    Adventure.</a></h5>
+                                            <h5><a href="land/adventure-and-hot-spring.html">Pass Full Day Adventure And
+                                                    Hot Springs.</a></h5>
                                             <blockquote>
-                                                <p>You can practice with your guide and then enjoy your
-                                                    adrenaline-filled trip for 2:30 minutes along the Tenorio river
-                                                    canyon. </p>
+                                                <p>One of the most beatiful destinations in Costa Rica, as it has many
+                                                    attractions and places to discover.</p>
                                             </blockquote>
                                         </div>
                                         <div class="card-content-bottom">
                                             <div class="price-area">
                                             </div>
-                                            <a href="water/water-tour-11.html" class="primary-btn1">Read More
+                                            <a href="land/adventure-and-hot-spring.html" class="primary-btn1">Read More
+                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
+                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                                                    xml:space="preserve">
+
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <g id="next">
+                                                            <g>
+                                                                <polygon
+                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item" data-aos="fade-up">
+                                <div class="package-card">
+                                    <div class="package-card-img-wrap">
+                                        <a href="land/rainforest-bijagua.html" class="card-img"><img
+                                                src="assets/img/home1/rainforest.jpg" alt></a>
+                                        <div class="batch">
+
+                                            <div class="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18">
+                                                    <path
+                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
+                                                </svg>
+                                                <ul class="location-list">
+                                                    <li><a href="package-grid.html">Costa Rica</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="package-card-content">
+                                        <div class="card-content-top">
+                                            <h5><a href="land/rainforest-bijagua.html">Rainforest Bijagua Tours.</a>
+                                            </h5>
+                                            <blockquote>
+                                                <p>It is a jungle in this part of the Province of Alajuela near the
+                                                    border between the province of Guanacaste and
+                                                    because it is a biological corridor it is home to many tropical
+                                                    species such as mammals, amphibians, reptiles and
+                                                    birds.</p>
+                                            </blockquote>
+                                        </div>
+                                        <div class="card-content-bottom">
+                                            <div class="price-area">
+                                            </div>
+                                            <a href="land/rainforest-bijagua.html" class="primary-btn1">Read More
+                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
+                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                                                    xml:space="preserve">
+
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <g id="next">
+                                                            <g>
+                                                                <polygon
+                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item" data-aos="fade-up">
+                                <div class="package-card">
+                                    <div class="package-card-img-wrap">
+                                        <a href="land/santa-rosa-national-park.html" class="card-img"><img
+                                                src="assets/img/home1/santa-rosa.jpg" alt></a>
+                                        <div class="batch">
+
+                                            <div class="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18">
+                                                    <path
+                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
+                                                </svg>
+                                                <ul class="location-list">
+                                                    <li><a href="package-grid.html">Santa Rosa National Park, Costa
+                                                            Rica.</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="package-card-content">
+                                        <div class="card-content-top">
+                                            <h5><a href="land/santa-rosa-national-park.html">Santa Rosa National
+                                                    Park.</a></h5>
+                                            <blockquote>
+                                                <p>In this site, declared a World Heritage Site, the only patch of dry
+                                                    tropical forest in Mesoamerica is preserved. In
+                                                    addition, the area is fully connected to humid, cloudy and rainy
+                                                    forests, which makes it possible for it to have an
+                                                    important biological richness.</p>
+                                            </blockquote>
+                                        </div>
+                                        <div class="card-content-bottom">
+                                            <div class="price-area">
+                                            </div>
+                                            <a href="land/santa-rosa-national-park.html" class="primary-btn1">Read More
+                                                <svg fill="#000000" height="18px" width="18px" version="1.1"
+                                                    id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                                                    xml:space="preserve">
+
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <g id="next">
+                                                            <g>
+                                                                <polygon
+                                                                    points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 " />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item" data-aos="fade-up">
+                                <div class="package-card">
+                                    <div class="package-card-img-wrap">
+                                        <a href="land/zip-line-adrenaline.html" class="card-img"><img
+                                                src="assets/img/home1/ziplines.jpg" alt></a>
+                                        <div class="batch">
+
+                                            <div class="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18">
+                                                    <path
+                                                        d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z" />
+                                                </svg>
+                                                <ul class="location-list">
+                                                    <li><a href="package-grid.html">Costa Rica </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="package-card-content">
+                                        <div class="card-content-top">
+                                            <h5><a href="land/zip-line-adrenaline.html">Zip Line Adrenaline.</a></h5>
+                                            <blockquote>
+                                                <p>Experience the thrill of Zip Line Adventure: Soar through the skies
+                                                    and feel the adrenaline rush!</p>
+                                            </blockquote>
+                                        </div>
+                                        <div class="card-content-bottom">
+                                            <div class="price-area">
+                                            </div>
+                                            <a href="land/zip-line-adrenaline.html" class="primary-btn1">Read More
                                                 <svg fill="#000000" height="18px" width="18px" version="1.1"
                                                     id="XMLID_287_" xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
@@ -1021,7 +1156,8 @@
                             </div>
                         </div>
                     </div>
-                    <!--<div class="row">
+
+                    <div class="row">
                         <div class="col-lg-12">
                             <nav class="inner-pagination-area">
                                 <ul class="pagination-list">
@@ -1042,7 +1178,7 @@
                                 </ul>
                             </nav>
                         </div>
-                    </div>-->
+                    </div>
                 </div>
                 <!--<div class="col-lg-4">
                     <div class="sidebar-area">
@@ -1077,8 +1213,7 @@
                             <h5 class="widget-title">Recent Tours</h5>
                             <div class="recent-post-widget mb-20">
                                 <div class="recent-post-img">
-                                    <a href="cultural/cultural-tour-1.html"><img
-                                            src="assets/img/innerpage/recent-post-Arenal Rafting.jpg" alt></a>
+                                    <a href="cultural/cultural-tour-1.html"><img src="assets/img/innerpage/recent-post-Arenal Rafting.jpg" alt></a>
                                 </div>
                                 <div class="recent-post-content">
                                     <a href="cultural/cultural-tour-1.html">Tours/Cultural Tours</a>
@@ -1087,8 +1222,8 @@
                             </div>
                             <div class="recent-post-widget mb-20">
                                 <div class="recent-post-img">
-                                    <a href="fortuna/arenal-rafting.html"><img
-                                            src="assets/img/innerpage/recent-post-arenal-rafting.jpg" alt></a>
+                                    <a href="fortuna/arenal-rafting.html"><img src="assets/img/innerpage/recent-post-arenal-rafting.jpg"
+                                            alt></a>
                                 </div>
                                 <div class="recent-post-content">
                                     <a href="fortuna/arenal-rafting.html">Tours/Fortuna Arenal Tours</a>
@@ -1097,12 +1232,12 @@
                             </div>
                             <div class="recent-post-widget mb-20">
                                 <div class="recent-post-img">
-                                    <a href="land/cañon-de-la-vieja.html"><img
-                                            src="assets/img/innerpage/recent-post-cañon-de-la-vieja.jpg" alt></a>
+                                    <a href="water/water-tour-8.html"><img src="assets/img/innerpage/recent-post-sarapiqui-boat.jpg"
+                                            alt></a>
                                 </div>
                                 <div class="recent-post-content">
-                                    <a href="land/cañon-de-la-vieja.html">Tours/Land Tours</a>
-                                    <h6><a href="land/cañon-de-la-vieja.html">Mega Combo Cañon De La Vieja.</a></h6>
+                                    <a href="water/water-tour-8.html">Tours/Water Tours</a>
+                                    <h6><a href="water/water-tour-8.html">Sarapiqui Boat Tours.</a></h6>
                                 </div>
                             </div>
                         </div>
@@ -1172,15 +1307,15 @@
                                     <div class="home4-banner2-content">
                                         <span>Recent Tours</span>
                                         <h2>
-                                            Mega Combo Cañon De La Vieja.  <br>
-                                            <strong>Land Tour</strong>
+                                            Hacienda El Viejo Boat And Cultural Tours. <br> 
+                                            <strong>Water Tour</strong>   
                                         </h2>
-                                        <a href="land/cañon-de-la-vieja.html" class="secondary-btn1">View Tour</a>
+                                        <a href="water/water-tour-4.html" class="secondary-btn1">View Tour</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-8 p-0">
                                     <div class="home4-banner2-img">
-                                        <img src="assets/img/home4/cañon-de-la-vieja-banner.png" alt>
+                                        <img src="assets/img/home4/hacienda-el-viejo-banner.png" alt>
                                     </div>
                                 </div>
                             </div>
@@ -1197,7 +1332,6 @@
 		<a href="https://www.instagram.com/NewTravelsCR" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
         <a href="https://www.youtube.com/@newtravelsreasonscostarica" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
     </div>
-    <a id="buttonBtT"></a>
     <footer class="footer-section style-4">
         <div class="container">
             <div class="footer-top">
