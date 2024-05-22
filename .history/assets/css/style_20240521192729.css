@@ -35535,8 +35535,6 @@ select::-ms-expand {
   .tripadvisor-button {
       width: 50px; /* Ancho fijo en dispositivos móviles */
       transition: none; /* Eliminar transición en dispositivos móviles */
-      background-color: rgba(0, 126, 96, 0.8); /* Color transparente */
-
   }
 
   .tripadvisor-button:hover {

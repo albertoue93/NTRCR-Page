@@ -35492,6 +35492,8 @@ select::-ms-expand {
   width: 200px;
   background-color: #007e60;
   border-radius: 25px 0 0 25px;
+  background-color: rgba(0, 126, 96, 0.8); /* Color transparente */
+
   justify-content: flex-start;
   padding-left: 10px;
 }
@@ -35535,8 +35537,6 @@ select::-ms-expand {
   .tripadvisor-button {
       width: 50px; /* Ancho fijo en dispositivos móviles */
       transition: none; /* Eliminar transición en dispositivos móviles */
-      background-color: rgba(0, 126, 96, 0.8); /* Color transparente */
-
   }
 
   .tripadvisor-button:hover {

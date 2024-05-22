@@ -35535,14 +35535,14 @@ select::-ms-expand {
   .tripadvisor-button {
       width: 50px; /* Ancho fijo en dispositivos móviles */
       transition: none; /* Eliminar transición en dispositivos móviles */
-      background-color: rgba(0, 126, 96, 0.8); /* Color transparente */
-
   }
 
   .tripadvisor-button:hover {
       width: 50px; /* Ancho fijo en dispositivos móviles */
       justify-content: center; /* Centrar el contenido en dispositivos móviles */
       padding-left: 0; /* Eliminar el padding en dispositivos móviles */
+      background-color: rgba(0, 126, 96, 0.8); /* Color transparente */
+
   }
 
   .tripadvisor-button:hover .tooltip1 {
