@@ -12262,6 +12262,11 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
     min-height: 650px;
   }
 }
+@media (max-width: 768px) {
+  .home2-banner-area .home2-banner-wrapper {
+    min-height: 750px;
+  }
+}
 .home2-banner-area .home2-banner-content-wrap {
   position: absolute;
   left: 50%;
@@ -12300,7 +12305,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 @media (max-width: 767px) {
   .home2-banner-area .home2-banner-content-wrap .home2-banner-content {
-    padding: 120px 0 30px;
+    padding: 150px 0 30px;
   }
 }
 .home2-banner-area .home2-banner-content-wrap .home2-banner-content .eg-tag {
@@ -12371,7 +12376,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 .home2-banner-area .home2-banner-content-wrap .home2-banner-content h1 span {
   color: var(--primary-color1);
-  font-family: "Lemon";
+  /*font-family: "Lemon";*/
   display: inline-block;
   line-height: 1;
   position: relative;
@@ -26050,8 +26055,8 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 @media (max-width: 576px) {
   #buttonBtT {
     margin: 10px;
-    bottom: 10px;
-    right: 5px;
+    bottom: 50px;
+    right: 02px;
   }
 }
 #buttonBtT::after {
@@ -27144,22 +27149,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   white-space: nowrap;
   transition: 0.5s;
 }
-.product-card .product-card-img .cart-area .add-cart-btn::after {
-  position: absolute;
-  content: "";
-  display: block;
-  left: 15%;
-  right: -20%;
-  top: -4%;
-  height: 150%;
-  width: 150%;
-  bottom: 0;
-  border-radius: 2px;
-  background-color: var(--primary-color2);
-  transform: skewX(45deg) scale(0, 1);
-  z-index: -1;
-  transition: all 0.5s ease-out 0s;
-}
+
 .product-card .product-card-img .cart-area .add-cart-btn:hover {
   color: var(--title-color);
 }
@@ -31241,7 +31231,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   align-items: center;
   gap: 8px;
   padding-right: 40px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--title-color);
   font-family: var(--font-rubik);
@@ -31681,6 +31671,14 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   letter-spacing: 0.75px;
   margin-bottom: 10px;
   padding-top: 10px;
+}
+.transport-details-section .includ-and-exclud-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.transport-details-section .includ-and-exclud-area ul {
+  width: 100%;
 }
 .transport-details-section .includ-and-exclud-area ul li {
   color: var(--text-color);
@@ -35320,5 +35318,224 @@ select::-ms-expand {
   .nav-link .package-number {
       margin-top: 5px;
       /* Espacio entre el texto "Paquete" y el número */
+  }
+}
+
+.social-sticky-bar {
+  position: fixed;
+  top: 50%;
+  right: 05px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 10px 0;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+.social-icon i {
+  font-size: 20px;
+}
+
+.social-icon.facebook:hover {
+  background-color: #3b5998;
+}
+
+.social-icon.instagram:hover {
+  background-color: #e4405f;
+}
+
+.social-icon.whatsapp:hover {
+  background-color: #25d366;
+}
+
+.social-icon.google-maps:hover {
+  background-color: #db4437;
+}
+
+.social-icon.youtube:hover {
+  background-color: #ff0000;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .social-sticky-bar {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transform: translateY(0);
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: #333;
+      padding: 10px 0;
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .social-icon {
+      margin: 0;
+      background-color: transparent;
+  }
+  
+  .social-icon:hover {
+      background-color: transparent;
+      transform: scale(1.1);
+  }
+}
+
+.package-inner-title-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 400px;
+  flex-grow: 1;
+  margin-right: auto;
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#search-input:focus {
+  border-color: #007bff;
+}
+
+.search-button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.search-button svg {
+  color: #333;
+  width: 20px;
+  height: 20px;
+  transition: color 0.3s;
+}
+
+.search-button:hover svg {
+  color: #007bff;
+}
+
+#result-count {
+  margin-left: auto;
+  font-size: 1rem;
+  color: #666;
+}
+
+.tripadvisor-button {
+  position: fixed;
+  top: 120px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #00a680;
+  border-radius: 25px 0 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: width 0.3s, background-color 0.3s, border-radius 0.3s;
+}
+
+.tripadvisor-button:hover {
+  width: 200px;
+  background-color: #007e60;
+  border-radius: 25px 0 0 25px;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  transition: margin-left 0.3s;
+}
+
+.tripadvisor-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.tooltip1 {
+  visibility: hidden;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: visibility 0.3s, width 0.3s;
+  color: #fff;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.tripadvisor-button:hover .tooltip1 {
+  visibility: visible;
+  width: auto;
+}
+
+.tripadvisor-button:hover .icon-container {
+  margin-left: 0;
+}
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  .tripadvisor-button {
+      width: 50px; /* Ancho fijo en dispositivos móviles */
+      transition: none; /* Eliminar transición en dispositivos móviles */
+      background-color: rgba(0, 126, 96, 0.8); /* Color transparente */
+
+  }
+
+  .tripadvisor-button:hover {
+      width: 50px; /* Ancho fijo en dispositivos móviles */
+      justify-content: center; /* Centrar el contenido en dispositivos móviles */
+      padding-left: 0; /* Eliminar el padding en dispositivos móviles */
+  }
+
+  .tripadvisor-button:hover .tooltip1 {
+      visibility: hidden; /* Ocultar el tooltip en dispositivos móviles */
+      width: 0; /* Ancho cero en dispositivos móviles */
+  }
+  .tripadvisor-icon {
+    width: 37px; /* Ajuste del tamaño del icono en dispositivos móviles */
+    height: 37px;
   }
 }
