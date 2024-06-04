@@ -35446,7 +35446,7 @@ select::-ms-expand {
 
 .search-button {
   position: absolute;
-  right: 8px;
+  right: 5px;
   top: 50%;
   transform: translateY(-50%);
   background: none;

@@ -26132,6 +26132,17 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   align-items: center;
   justify-content: center;
   gap: 10px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 12px;
+  font-size: 14px;
+  list-style: none; /* Para eliminar los puntos de lista */
+  margin: 0 auto; /* Para centrar horizontalmente */
 }
 .breadcrumb-section .banner-content .breadcrumb-list li {
   color: var(--white-color);
@@ -35446,7 +35457,7 @@ select::-ms-expand {
 
 .search-button {
   position: absolute;
-  right: 8px;
+  right: 5px;
   top: 50%;
   transform: translateY(-50%);
   background: none;

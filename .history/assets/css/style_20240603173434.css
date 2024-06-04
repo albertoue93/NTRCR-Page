@@ -26141,6 +26141,11 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   text-transform: capitalize;
   position: relative;
   padding-left: 26px;
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
 }
 .breadcrumb-section .banner-content .breadcrumb-list li a {
   color: var(--primary-color1);
@@ -35446,7 +35451,7 @@ select::-ms-expand {
 
 .search-button {
   position: absolute;
-  right: 8px;
+  right: 5px;
   top: 50%;
   transform: translateY(-50%);
   background: none;

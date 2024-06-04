@@ -26091,6 +26091,14 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   background-repeat: no-repeat;
   background-position: center;
   padding: 320px 0 130px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 12px;
+  font-size: 14px;
 }
 .wave1 {
   -webkit-mask-box-image: url(../img/home2/wave.svg);
@@ -35446,7 +35454,7 @@ select::-ms-expand {
 
 .search-button {
   position: absolute;
-  right: 8px;
+  right: 5px;
   top: 50%;
   transform: translateY(-50%);
   background: none;

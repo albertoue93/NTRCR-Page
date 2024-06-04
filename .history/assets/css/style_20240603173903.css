@@ -26133,6 +26133,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   justify-content: center;
   gap: 10px;
 }
+
 .breadcrumb-section .banner-content .breadcrumb-list li {
   color: var(--white-color);
   font-family: var(--font-rubik);
@@ -26140,11 +26141,22 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   font-weight: 400;
   text-transform: capitalize;
   position: relative;
-  padding-left: 26px;
+  padding: 5px 10px; /* Ajustar padding para el badge */
+  background-color: var(--primary-color1); /* Fondo colorido */
+  border-radius: 12px; /* Bordes redondeados */
+  display: inline-block; /* Asegura que se comporta como un badge */
 }
+
 .breadcrumb-section .banner-content .breadcrumb-list li a {
-  color: var(--primary-color1);
+  color: var(--white-color); /* Asegúrate de que los enlaces tengan un buen contraste */
+  text-decoration: none; /* Remover subrayado */
 }
+
+/* Si quieres que el enlace tenga un color diferente en hover */
+.breadcrumb-section .banner-content .breadcrumb-list li a:hover {
+  color: var(--secondary-color); /* Color en hover */
+}
+
 .breadcrumb-section .banner-content .breadcrumb-list li::before {
   content: url(../img/innerpage/icon/slash.svg);
   position: absolute;
@@ -35446,7 +35458,7 @@ select::-ms-expand {
 
 .search-button {
   position: absolute;
-  right: 8px;
+  right: 5px;
   top: 50%;
   transform: translateY(-50%);
   background: none;

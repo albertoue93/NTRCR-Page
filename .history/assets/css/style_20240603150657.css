@@ -11891,7 +11891,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   line-height: 1.6;
   text-transform: capitalize;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .footer-section .footer-top .footer-widget h3 span {
   font-size: 25px;
@@ -35446,7 +35446,7 @@ select::-ms-expand {
 
 .search-button {
   position: absolute;
-  right: 8px;
+  right: 5px;
   top: 50%;
   transform: translateY(-50%);
   background: none;

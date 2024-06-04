@@ -26133,18 +26133,28 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   justify-content: center;
   gap: 10px;
 }
+
 .breadcrumb-section .banner-content .breadcrumb-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color1); /* Fondo del badge */
   color: var(--white-color);
   font-family: var(--font-rubik);
   font-size: 15px;
   font-weight: 400;
   text-transform: capitalize;
+  padding: 5px 15px; /* Ajusta el padding según tus necesidades */
+  border-radius: 20px; /* Borde redondeado para el estilo de badge */
   position: relative;
   padding-left: 26px;
 }
+
 .breadcrumb-section .banner-content .breadcrumb-list li a {
-  color: var(--primary-color1);
+  color: var(--white-color); /* El color del texto del enlace será blanco */
+  text-decoration: none; /* Quita el subrayado del enlace */
 }
+
 .breadcrumb-section .banner-content .breadcrumb-list li::before {
   content: url(../img/innerpage/icon/slash.svg);
   position: absolute;
@@ -35446,7 +35456,7 @@ select::-ms-expand {
 
 .search-button {
   position: absolute;
-  right: 8px;
+  right: 5px;
   top: 50%;
   transform: translateY(-50%);
   background: none;

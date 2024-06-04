@@ -12199,7 +12199,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   }
 }
 .footer-section.style-4 .footer-top {
-  padding: 110px 0;
+  padding: 100px 0;
 }
 @media (max-width: 1399px) {
   .footer-section.style-4 .footer-top {
@@ -35446,7 +35446,7 @@ select::-ms-expand {
 
 .search-button {
   position: absolute;
-  right: 8px;
+  right: 5px;
   top: 50%;
   transform: translateY(-50%);
   background: none;
