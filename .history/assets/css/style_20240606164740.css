@@ -35656,7 +35656,6 @@ select::-ms-expand {
 }
 @media (max-width: 600px) {
   .company-about {
-      flex-direction: column;
       text-align: center;
   }
   .company-about img {

@@ -35627,10 +35627,9 @@ select::-ms-expand {
   color: #999999;
 }
 
-.company-about {
+.empresa {
   display: flex;
   align-items: center;
-  text-align: center;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -35638,28 +35637,26 @@ select::-ms-expand {
   max-width: 800px;
   margin: 50px auto;
 }
-.company-about img {
+@media (max-width: 600px) {
+  .empresa {
+      text-align: center;
+  }
+  .empresa img {
+      margin: 0 auto 20px;
+  }
+}
+.empresa img {
   max-width: 150px;
   margin-right: 20px;
 }
-.company-about .descritcion {
+.empresa .descripcion {
   max-width: 600px;
 }
-.company-about .descritcion h2 {
+.empresa .descripcion h2 {
   margin: 0;
   font-size: 24px;
 }
-.company-about .description p {
+.empresa .descripcion p {
   font-size: 16px;
-  color: var(--text-color);
-  font-family: var(--font-rubik);
-}
-@media (max-width: 600px) {
-  .company-about {
-      flex-direction: column;
-      text-align: center;
-  }
-  .company-about img {
-      margin: 0 auto 20px;
-  }
+  color: #555;
 }
