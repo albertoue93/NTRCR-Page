@@ -12049,9 +12049,8 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .footer-section .footer-top .footer-widget .payment-partner .icons ul {
-    display: flex;
-  align-items: center;
-  gap: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 .footer-section .footer-top .footer-widget .payment-partner .icons ul li img {

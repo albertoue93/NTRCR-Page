@@ -12049,9 +12049,8 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .footer-section .footer-top .footer-widget .payment-partner .icons ul {
-    display: flex;
-  align-items: center;
-  gap: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 .footer-section .footer-top .footer-widget .payment-partner .icons ul li img {
@@ -12065,7 +12064,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   color: rgba(255, 255, 255, 0.5);
   font-family: var(--font-rubik);
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: normal;
   letter-spacing: 0.42px;
   margin-bottom: 0;
