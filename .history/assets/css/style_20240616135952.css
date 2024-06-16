@@ -26738,6 +26738,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 .contact-form-area p {
   color: var(--text-color);
+  text-align: center;
   font-family: var(--font-jost);
   font-size: 16px;
   font-weight: 400;
