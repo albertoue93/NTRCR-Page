@@ -57,6 +57,45 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function handleSearchInput() {
+    var input = document.getElementById('search-input');
+    var searchIcon = document.getElementById('search-icon');
+    var clearIcon = document.getElementById('clear-icon');
+    if (input.value.length > 0) {
+        searchIcon.style.display = 'none';
+        clearIcon.style.display = 'block';
+    } else {
+        searchIcon.style.display = 'block';
+        clearIcon.style.display = 'none';
+    }
+    filterResults();
+}
+
+function clearSearch() {
+    var input = document.getElementById('search-input');
+    input.value = '';
+    handleSearchInput();
+}
+
+function filterResults() {
+    var input = document.getElementById('search-input');
+    var filter = input.value.toLowerCase();
+    var packageList = document.getElementById('package-list');
+    var items = packageList.getElementsByClassName('item');
+
+    var count = 0;
+    for (var i = 0; i < items.length; i++) {
+        var title = items[i].getAttribute('data-title');
+        if (title.toLowerCase().indexOf(filter) > -1) {
+            items[i].style.display = "";
+            count++;
+        } else {
+            items[i].style.display = "none";
+        }
+    }
+
+    document.getElementById('result-count').innerText = 'Showing ' + count + ' of ' + items.length + ' results';
+}
 
 function redirectToWhatsApp() {
     /* Isi Pesan Form */
@@ -67,6 +106,7 @@ function redirectToWhatsApp() {
     /* validation */
     var error_name = document.getElementById("error_name"),
         error_email = document.getElementById("error_email"),
+        error_email = document.getElementById("error_phone"),
         error_message = document.getElementById("error_message");
 
     var text;

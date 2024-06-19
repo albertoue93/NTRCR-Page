@@ -31,11 +31,11 @@ $(document).ready(function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     let lastScrollY = window.scrollY;
     const socialBar = document.querySelector('.social-sticky-bar');
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.innerWidth <= 768) {
             if (window.scrollY > lastScrollY) {
                 // Scrolling down
@@ -106,6 +106,7 @@ function redirectToWhatsApp() {
     /* validation */
     var error_name = document.getElementById("error_name"),
         error_email = document.getElementById("error_email"),
+        error_email = document.getElementById("error_phone"),
         error_message = document.getElementById("error_message");
 
     var text;
@@ -118,6 +119,12 @@ function redirectToWhatsApp() {
     if (email.indexOf("@") == -1 || email.length < 6) {
         text = "Please enter valid email";
         error_email.setAttribute("data-text", text);
+        return false;
+    }
+
+    if (phone == "") {
+        text = "Please enter your Phone";
+        error_message.setAttribute("data-text", text);
         return false;
     }
 
