@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="path-to-your-styles.css">
+</head>
+<body>
+    <div class="package-grid-with-sidebar-section pt-120 mb-120">
+        <div class="container">
+            <div class="row g-lg-4 gy-5">
+                <div class="col-lg-12">
+                    <div class="package-inner-title-section mb-40">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Search Fortuna Tour..." oninput="handleSearchInput()">
+                            <button class="search-button" onclick="clearSearch()">
+                                <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                                <svg id="clear-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" style="display: none;">
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <p id="result-count">Showing X of X results</p>
+                    </div>
+
+                    <div class="list-grid-product-wrap mb-70">
+                        <div class="row gy-4" id="package-list">
+                            <!-- Este es un ejemplo de cómo se vería un resultado -->
+                            <div class="col-md-4 item" data-title="Arenal Rafting">
+                                <div class="package-card">
+                                    <div class="package-card-img-wrap">
+                                        <a href="fortuna/arenal-rafting.html" class="card-img"><img src="assets/img/home1/arenal-rafting-bg.jpg" alt="Arenal Rafting"></a>
+                                        <div class="batch">
+                                            <div class="location">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                                    <path d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z"/>
+                                                </svg>
+                                                <ul class="location-list">
+                                                    <li><a href="fortuna/arenal-rafting.html">San Carlos, Alajuela, Costa Rica</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="package-card-content">
+                                        <div class="card-content-top">
+                                            <h5><a href="fortuna/arenal-rafting.html">Arenal Rafting</a></h5>
+                                            <blockquote><p>This is the safest and most exciting adventure to enjoy with the whole family.</p></blockquote>
+                                        </div>
+                                        <div class="card-content-bottom">
+                                            <a href="fortuna/arenal-rafting.html" class="primary-btn2">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Agregar más elementos de resultados aquí -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="path-to-your-scripts.js"></script>
+</body>
+</html>
