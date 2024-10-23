@@ -56,38 +56,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     };
 
-    // Función para la animación de arrastre
-    function smoothDragScroll(target) {
-        const scrollDuration = 1000; // duración de la animación en ms
-        const startPosition = window.pageYOffset;
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-        const distance = targetPosition - startPosition;
-        let startTime = null;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const run = ease(timeElapsed, startPosition, distance, scrollDuration);
-            window.scrollTo(0, run);
-            if (timeElapsed < scrollDuration) requestAnimationFrame(animation);
-        }
-
-        // Función de easing (arrastre más suave)
-        function ease(t, b, c, d) {
-            t /= d / 2;
-            if (t < 1) return c / 2 * t * t + b;
-            t--;
-            return -c / 2 * (t * (t - 2) - 1) + b;
-        }
-
-        requestAnimationFrame(animation);
-    }
-
-    // Modificar aquí para desplazarse con animación de arrastre
+    // Modificar aquí para desplazarse a #top
     circleContainer.onclick = function() {
         const topElement = document.querySelector('#top');
         if (topElement) {
-            smoothDragScroll(topElement);  // Llamada a la función de animación personalizada
+            topElement.scrollIntoView({ behavior: 'smooth' });
         }
     };
     
@@ -97,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     updateLoader();
 });
-
 
 
 document.addEventListener('DOMContentLoaded', function () {

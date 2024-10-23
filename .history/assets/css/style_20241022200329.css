@@ -35704,7 +35704,7 @@ select::-ms-expand {
 .circle-container {
   background: 0 0;
   position: fixed;
-  right: 30px;
+  right: 50px;
   bottom: 50px;
   height: 46px;
   width: 46px;
@@ -35716,13 +35716,20 @@ select::-ms-expand {
   opacity: 0;
   visibility: hidden;
   transform: translateY(15px);
-  transition: all 200ms linear;
+  transition: all 200ms linear
+}
+
+@media(max-width: 991px) {
+  .circle-container {
+      display:none;
+      visibility: hidden
+  }
 }
 
 .circle-container.active {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateY(0)
 }
 
 .circle-container::after {
@@ -35740,7 +35747,7 @@ select::-ms-expand {
   cursor: pointer;
   display: block;
   z-index: 1;
-  transition: all 200ms linear;
+  transition: all 200ms linear
 }
 
 .circle-container:hover::after {
@@ -35748,59 +35755,32 @@ select::-ms-expand {
   font-family: bootstrap-icons;
   content: "";
   color: var(--green);
-  transition: all 200ms linear;
+  transition: all 200ms linear
 }
 
 .circle-container svg path {
-  fill: none;
+  fill: none
 }
 
 .circle-container svg.circle-progress path {
   stroke: var(--primary-color1);
   stroke-width: 5;
   box-sizing: border-box;
-  transition: all 200ms linear;
+  transition: all 200ms linear
 }
 
 .circle-container.sibling-2::after {
-  color: var(--primary-color2);
+  color: var(--primary-color2)
 }
 
 .circle-container.sibling-2 svg.circle-progress path {
-  stroke: var(--primary-color2);
+  stroke: var(--primary-color2)
 }
 
 .circle-container.sibling-3::after {
-  color: var(--primary-color3);
+  color: var(--primary-color3)
 }
 
 .circle-container.sibling-3 svg.circle-progress path {
-  stroke: var(--primary-color3);
-}
-@media(max-width: 991px) {
-  .circle-container {
-    background: 0 0;
-    position: fixed;
-    right: 10px;
-    bottom: 40px;
-    height: 46px;
-    width: 46px;
-    cursor: pointer;
-    display: block;
-    border-radius: 50px;
-    box-shadow: inset 0 0 0 2px rgba(0,0,0,.07);
-    z-index: 10000;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(15px);
-    transition: all 200ms linear;
-  }
-
-  .circle-container::after {
-    position: absolute;
-    font-family: bootstrap-icons;
-    content: "";
-    color: var(--green);
-    transition: all 200ms linear;
-  }
+  stroke: var(--primary-color3)
 }

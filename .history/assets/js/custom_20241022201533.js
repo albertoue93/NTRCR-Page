@@ -31,72 +31,16 @@ AOS.init({
     });
 });*/
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    let offset = 50;
-    let circleContainer = document.querySelector(".circle-container");
-    let circlePath = document.querySelector('.circle-container path');
-    let pathLength = circlePath.getTotalLength();
-    circlePath.style.transition = circlePath.style.WebkitTransition = 'none';
-    circlePath.style.strokeDasharray = pathLength;
-    circlePath.style.strokeDashoffset = pathLength;
-    circlePath.getBoundingClientRect();
-    circlePath.style.transition = circlePath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
-    
-    let updateLoader = () => {
-        let scrollTop = window.scrollY;
-        let docHeight = document.body.offsetHeight;
-        let winHeight = window.innerHeight;
-        let height = docHeight - winHeight;
-        let progress = pathLength - (scrollTop * pathLength / height);
-        circlePath.style.strokeDashoffset = progress;
-        if (scrollTop > offset) {
-            circleContainer.classList.add("active");
-        } else {
-            circleContainer.classList.remove("active");
-        }
-    };
+.circle-container.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 200ms linear, transform 1s ease;
+}
 
-    // Función para la animación de arrastre
-    function smoothDragScroll(target) {
-        const scrollDuration = 1000; // duración de la animación en ms
-        const startPosition = window.pageYOffset;
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-        const distance = targetPosition - startPosition;
-        let startTime = null;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const run = ease(timeElapsed, startPosition, distance, scrollDuration);
-            window.scrollTo(0, run);
-            if (timeElapsed < scrollDuration) requestAnimationFrame(animation);
-        }
-
-        // Función de easing (arrastre más suave)
-        function ease(t, b, c, d) {
-            t /= d / 2;
-            if (t < 1) return c / 2 * t * t + b;
-            t--;
-            return -c / 2 * (t * (t - 2) - 1) + b;
-        }
-
-        requestAnimationFrame(animation);
-    }
-
-    // Modificar aquí para desplazarse con animación de arrastre
-    circleContainer.onclick = function() {
-        const topElement = document.querySelector('#top');
-        if (topElement) {
-            smoothDragScroll(topElement);  // Llamada a la función de animación personalizada
-        }
-    };
-    
-    window.onscroll = () => {
-        updateLoader();
-    };
-    
-    updateLoader();
-});
+.circle-container.dragging {
+    transform: scale(1.1);
+}
 
 
 

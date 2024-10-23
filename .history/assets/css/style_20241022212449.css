@@ -35704,7 +35704,7 @@ select::-ms-expand {
 .circle-container {
   background: 0 0;
   position: fixed;
-  right: 30px;
+  right: 20px;
   bottom: 50px;
   height: 46px;
   width: 46px;
@@ -35781,8 +35781,8 @@ select::-ms-expand {
   .circle-container {
     background: 0 0;
     position: fixed;
-    right: 10px;
-    bottom: 40px;
+    right: 20px;
+    bottom: 50px;
     height: 46px;
     width: 46px;
     cursor: pointer;

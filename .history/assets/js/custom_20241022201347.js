@@ -36,12 +36,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let circleContainer = document.querySelector(".circle-container");
     let circlePath = document.querySelector('.circle-container path');
     let pathLength = circlePath.getTotalLength();
+    
     circlePath.style.transition = circlePath.style.WebkitTransition = 'none';
     circlePath.style.strokeDasharray = pathLength;
     circlePath.style.strokeDashoffset = pathLength;
     circlePath.getBoundingClientRect();
     circlePath.style.transition = circlePath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
     
+    let lastScrollTop = 0;
+
     let updateLoader = () => {
         let scrollTop = window.scrollY;
         let docHeight = document.body.offsetHeight;
@@ -49,45 +52,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let height = docHeight - winHeight;
         let progress = pathLength - (scrollTop * pathLength / height);
         circlePath.style.strokeDashoffset = progress;
+
+        // Agregar o quitar clase "active" según el scroll
         if (scrollTop > offset) {
             circleContainer.classList.add("active");
         } else {
             circleContainer.classList.remove("active");
         }
+
+        // Efecto de arrastre (dragging effect)
+        let deltaScroll = scrollTop - lastScrollTop;
+        lastScrollTop = scrollTop;
+        
+        // Ajustar el movimiento del botón según el desplazamiento
+        let translateY = Math.min(Math.max(deltaScroll, -30), 30); // Limitar el movimiento
+        circleContainer.style.transform = `translateY(${translateY}px)`;
+
+        // Devolver el botón suavemente a su lugar
+        setTimeout(() => {
+            circleContainer.style.transform = `translateY(0px)`;
+        }, 100);
     };
 
-    // Función para la animación de arrastre
-    function smoothDragScroll(target) {
-        const scrollDuration = 1000; // duración de la animación en ms
-        const startPosition = window.pageYOffset;
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-        const distance = targetPosition - startPosition;
-        let startTime = null;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const run = ease(timeElapsed, startPosition, distance, scrollDuration);
-            window.scrollTo(0, run);
-            if (timeElapsed < scrollDuration) requestAnimationFrame(animation);
-        }
-
-        // Función de easing (arrastre más suave)
-        function ease(t, b, c, d) {
-            t /= d / 2;
-            if (t < 1) return c / 2 * t * t + b;
-            t--;
-            return -c / 2 * (t * (t - 2) - 1) + b;
-        }
-
-        requestAnimationFrame(animation);
-    }
-
-    // Modificar aquí para desplazarse con animación de arrastre
+    // Desplazarse al elemento #top al hacer clic en el botón
     circleContainer.onclick = function() {
         const topElement = document.querySelector('#top');
         if (topElement) {
-            smoothDragScroll(topElement);  // Llamada a la función de animación personalizada
+            topElement.scrollIntoView({ behavior: 'smooth' });
         }
     };
     

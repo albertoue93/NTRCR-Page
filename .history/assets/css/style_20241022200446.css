@@ -35704,7 +35704,7 @@ select::-ms-expand {
 .circle-container {
   background: 0 0;
   position: fixed;
-  right: 30px;
+  right: 50px;
   bottom: 50px;
   height: 46px;
   width: 46px;
@@ -35776,31 +35776,4 @@ select::-ms-expand {
 
 .circle-container.sibling-3 svg.circle-progress path {
   stroke: var(--primary-color3);
-}
-@media(max-width: 991px) {
-  .circle-container {
-    background: 0 0;
-    position: fixed;
-    right: 10px;
-    bottom: 40px;
-    height: 46px;
-    width: 46px;
-    cursor: pointer;
-    display: block;
-    border-radius: 50px;
-    box-shadow: inset 0 0 0 2px rgba(0,0,0,.07);
-    z-index: 10000;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(15px);
-    transition: all 200ms linear;
-  }
-
-  .circle-container::after {
-    position: absolute;
-    font-family: bootstrap-icons;
-    content: "";
-    color: var(--green);
-    transition: all 200ms linear;
-  }
 }
