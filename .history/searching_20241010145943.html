@@ -127,7 +127,10 @@
                 </div>
             </div>
         </div>
-        <div class="nav-right d-flex jsutify-content-end align-items-center">
+                <div class="nav-right d-flex jsutify-content-end align-items-center">
+            <div class="search-icon">
+                <i class="bi bi-search"></i>
+            </div>
             <div class="hotline-area d-xl-flex d-none">
                 <div class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
@@ -159,6 +162,25 @@
             </div>
         </div>
     </header>
+    <!-- Modal de búsqueda -->
+    <div class="mobile-search">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-11">
+                    <label>What are you looking for?</label>
+                    <input type="text" id="searchInput" autocomplete="off" placeholder="What can we help you find?">
+                </div>
+                <div class="col-1 d-flex justify-content-end align-items-center">
+                    <div class="search-btn" id="searchButton">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="search-cross-btn" id="closeButton">
+                        <i class="bi bi-x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="breadcrumb-section"
         style="background-image: linear-gradient(270deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.3) 101.02%), url(assets/img/innerpage/inner-banner-bg.jpg);">

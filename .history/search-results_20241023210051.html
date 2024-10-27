@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="assets/css/search-results.css">
+</head>
+
+<body>
+    <header class="header-area">
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/NTRCR-Logo.png" alt="Logo" class="logo-img"></a>
+        </div>
+        <div class="search-bar">
+            <form action="search-results.html" method="get">
+                <input type="text" name="query" placeholder="Search..." class="search-input" required>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <main class="search-results-container">
+        <h2 class="search-title">Search Results for "<span id="search-query">your search term</span>"</h2>
+
+        <div class="search-result">
+            <a href="result-page-1.html" class="result-title">Result Title 1</a>
+            <p class="result-url">www.example.com/result-page-1</p>
+            <p class="result-description">This is a brief description of the first search result, giving users a preview of the content.</p>
+        </div>
+
+        <div class="search-result">
+            <a href="result-page-2.html" class="result-title">Result Title 2</a>
+            <p class="result-url">www.example.com/result-page-2</p>
+            <p class="result-description">A brief description of the second search result, summarizing its contents.</p>
+        </div>
+
+        <div class="search-result">
+            <a href="result-page-3.html" class="result-title">Result Title 3</a>
+            <p class="result-url">www.example.com/result-page-3</p>
+            <p class="result-description">This is a summary of the third search result, providing insight into what the page contains.</p>
+        </div>
+
+        <!-- Additional results go here -->
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

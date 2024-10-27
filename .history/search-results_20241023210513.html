@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="assets/css/search-results.css">
+    <script defer src="assets/js/search.js"></script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 300px;
+}
+
+.search-btn {
+    padding: 8px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #2980b9;
+}
+
+.search-results-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.search-result {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.result-title {
+    font-size: 18px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.result-title:hover {
+    text-decoration: underline;
+}
+
+.result-url {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.result-description {
+    color: #555;
+    margin-top: 5px;
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="header-area">
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/NTRCR-Logo.png" alt="Logo" class="logo-img"></a>
+        </div>
+        <div class="search-bar">
+            <form id="search-form" action="search-results.html" method="get">
+                <input type="text" id="search-query" name="query" placeholder="Search..." class="search-input" required>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <main class="search-results-container">
+        <h2 class="search-title">Search Results for "<span id="search-term"></span>"</h2>
+        <div id="results-container">
+            <!-- Search results will be injected here -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
