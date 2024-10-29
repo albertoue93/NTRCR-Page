@@ -8379,23 +8379,17 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   }
 }
 .package-card .package-card-content .card-content-top h5 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 50px; /* Ajusta este valor para definir el espacio que ocupa el texto */
+  margin-bottom: 15px;
+  transition: 0.5s;
 }
-
 .package-card .package-card-content .card-content-top h5 a {
   color: var(--title-color);
   font-family: var(--font-rubik);
   font-size: 22px;
-  font-weight: 450;
+  font-weight: 500;
   line-height: 1.4;
   text-transform: capitalize;
   transition: 0.5s;
-  max-width: 100%;
-  white-space: normal; /* Permite dividir el texto en líneas cuando sea necesario */
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -13369,7 +13363,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 @media (max-width: 576px) {
   .package-card .package-card-content .card-content-bottom {
-    padding: 8px 15px;
+    padding: 20px 15px;
   }
 }
 .package-card .package-card-content .card-content-bottom .price-area {
@@ -26528,45 +26522,35 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 .width-100 {
   width: 100px;
 }
-.list-grid-product-wrap.list-group-wrapper .item {
-  width: 100%;
-}
-.list-grid-product-wrap.list-group-wrapper .item .package-card {
+/* Configuración básica para la tarjeta */
+.list-grid-product-wrap .item .package-card {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 350px; /* Ajusta según tu preferencia */
+  max-height: 550px; /* Limitar la altura máxima */
+  overflow: hidden;
 }
-.list-grid-product-wrap.list-group-wrapper
-  .item
-  .package-card
-  .package-card-img-wrap {
-  max-width: 350px;
-  width: 100%;
+
+.list-grid-product-wrap .item .package-card-content {
+  flex-grow: 1;
 }
-@media (max-width: 1199px) {
-  .list-grid-product-wrap.list-group-wrapper
-    .item
-    .package-card
-    .package-card-img-wrap {
-    max-width: 290px;
-  }
+
+.list-grid-product-wrap .item .package-card-content .card-content-top,
+.list-grid-product-wrap .item .package-card-content .card-content-bottom {
+  padding: 10px;
+  text-align: center;
 }
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .list-grid-product-wrap.list-group-wrapper
-    .item
-    .package-card
-    .package-card-content
-    .card-content-top
-    h5
-    a {
-    font-size: 20px;
-  }
-}
+
+/* Para dispositivos móviles, puedes ajustar el tamaño */
 @media (max-width: 767px) {
-  .list-grid-product-wrap.list-group-wrapper .item {
-    display: none;
+  .list-grid-product-wrap .item .package-card {
+    min-height: auto;
+    max-height: none;
   }
 }
+
 .visa-with-sidebar-section .list-grid-product-wrap.grid-group-wrapper .item {
   width: 50%;
 }

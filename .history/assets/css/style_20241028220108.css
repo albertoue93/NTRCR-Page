@@ -13369,7 +13369,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 @media (max-width: 576px) {
   .package-card .package-card-content .card-content-bottom {
-    padding: 8px 15px;
+    padding: 20px 15px;
   }
 }
 .package-card .package-card-content .card-content-bottom .price-area {

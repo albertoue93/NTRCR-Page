@@ -8383,20 +8383,20 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 50px; /* Ajusta este valor para definir el espacio que ocupa el texto */
 }
 
 .package-card .package-card-content .card-content-top h5 a {
   color: var(--title-color);
   font-family: var(--font-rubik);
   font-size: 22px;
-  font-weight: 450;
+  font-weight: 500;
   line-height: 1.4;
   text-transform: capitalize;
   transition: 0.5s;
-  max-width: 100%;
-  white-space: normal; /* Permite dividir el texto en líneas cuando sea necesario */
+  max-width: 100%; /* Para evitar que se expanda en varias líneas */
+  white-space: nowrap; /* Evita que el texto se divida en líneas */
 }
+
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   .package-card .package-card-content .card-content-top h5 a {
@@ -13369,7 +13369,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 @media (max-width: 576px) {
   .package-card .package-card-content .card-content-bottom {
-    padding: 8px 15px;
+    padding: 20px 15px;
   }
 }
 .package-card .package-card-content .card-content-bottom .price-area {
