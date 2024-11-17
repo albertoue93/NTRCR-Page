@@ -63,7 +63,6 @@
         </div>
     </div>
 
-
     <header class="header-area style-2">
         <div class="header-logo">
             <a href="index.html"><img alt="image" class="img-fluid" style="width: 50px; height: 50px;"
@@ -72,7 +71,8 @@
         <div class="main-menu">
             <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                 <div class="mobile-logo-wrap">
-                    <a href="index.html"><img alt="image" style="width: 50px; height: 50px;" src="assets/img/NTRCR-Logo.png"></a>
+                    <a href="index.html"><img alt="image" style="width: 50px; height: 50px;"
+                            src="assets/img/NTRCR-Logo.png"></a>
                 </div>
                 <div class="menu-close-btn">
                     <i class="bi bi-x"></i>
@@ -98,6 +98,15 @@
                         <li>
                             <a href="water-tours.html">Water Tours</a>
                         </li>
+                        <li>
+                            <a href="land/rainforest-bijagua.html">Bijagua Rainforest Tour</a>
+                        </li>
+                        <li>
+                            <a href="land/bird-watching-tour.html">Bird Watching Tour</a>
+                        </li>
+                        <li>
+                            <a href="land/monteverde-cloud.html">Monteverde Cloud Forest</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -106,20 +115,7 @@
                 <li>
                     <a href="contact.html" class="drop-down">Contact</a>
                 </li>
-    
-                <!-- Barra de búsqueda integrada en el menú -->
-                <li class="search-menu-item">
-                    <form action="resultados.html" method="GET" class="search-form">
-                        <input type="text" name="query" class="search-input" placeholder="Buscar...">
-                        <button type="submit" class="search-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.207.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
-                            </svg>
-                        </button>
-                    </form>
-                </li>
             </ul>
-    
             <div class="hotline-area d-lg-none d-flex">
                 <div class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
@@ -138,12 +134,36 @@
             </div>
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
+            <div class="search-icon">
+                <i class="bi bi-search"></i>
+            </div>
+            <!--<ul class="icon-list">
+
+                <li class="right-sidebar-button">
+                    <svg class="sidebar-toggle-button" width="25" height="25" viewBox="0 0 18 18"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.29608 0.0658336C0.609639 0.31147 0.139209 0.899069 0.0432028 1.63598C-0.0144009 2.09353 -0.0144009 5.4939 0.0432028 5.95146C0.129608 6.59686 0.489632 7.11703 1.07047 7.42046L1.36329 7.57458H3.83545H6.30761L6.59563 7.42046C6.96525 7.2278 7.25807 6.93401 7.45008 6.56314L7.60369 6.27416V3.79372V1.31328L7.45008 1.02429C7.25807 0.653433 6.96525 0.359633 6.59563 0.166978L6.30761 0.0128531L3.90745 0.00322056C1.83372 -0.00641251 1.4785 0.00322056 1.29608 0.0658336ZM6.2356 0.802741C6.52842 0.956866 6.65803 1.08209 6.79244 1.34699L6.90765 1.57336V3.80817V6.03816L6.74924 6.29824C6.53322 6.66429 6.2068 6.85694 5.74117 6.90029C5.54916 6.91956 4.55549 6.92437 3.52343 6.91474L1.65131 6.90029L1.41129 6.77025C1.12807 6.62094 1.00807 6.49571 0.854455 6.20191L0.739248 5.98518V3.79372V1.60226L0.854455 1.38552C1.05607 0.995397 1.33929 0.778659 1.74731 0.706413C1.85292 0.687148 2.85618 0.677515 3.97946 0.677515L6.01959 0.687148L6.2356 0.802741Z">
+                        </path>
+                        <path
+                            d="M11.6647 0.0658336C10.9783 0.31147 10.5079 0.899069 10.4119 1.63598C10.3879 1.82863 10.3687 2.80154 10.3687 3.79372C10.3687 4.7859 10.3879 5.75881 10.4119 5.95146C10.4983 6.59686 10.8583 7.11703 11.4391 7.42046L11.7319 7.57458H14.2041H16.6763L16.9643 7.42046C17.3339 7.2278 17.6267 6.93401 17.8187 6.56314L17.9723 6.27416V3.79372V1.31328L17.8187 1.02429C17.6267 0.653433 17.3339 0.359633 16.9643 0.166978L16.6763 0.0128531L14.2761 0.00322056C12.2024 -0.00641251 11.8471 0.00322056 11.6647 0.0658336ZM16.6043 0.802741C16.9019 0.956866 17.0267 1.08209 17.1611 1.35181L17.2811 1.583L17.2763 3.79854C17.2763 5.73472 17.2667 6.03816 17.1995 6.1682C17.0555 6.45237 16.9067 6.61131 16.6475 6.7558L16.3882 6.90029H14.2041H12.02L11.7799 6.77025C11.4967 6.62094 11.3767 6.49571 11.2231 6.20191L11.1079 5.98518V3.79372V1.60226L11.2231 1.38552C11.4247 0.995397 11.7079 0.778659 12.116 0.706413C12.2216 0.687148 13.2248 0.677515 14.3481 0.677515L16.3882 0.687148L16.6043 0.802741Z">
+                        </path>
+                        <path
+                            d="M1.29608 10.4693C0.609639 10.7149 0.139209 11.3025 0.0432028 12.0394C-0.0144009 12.497 -0.0144009 15.8973 0.0432028 16.3549C0.129608 17.0003 0.489632 17.5205 1.07047 17.8239L1.36329 17.978H3.83545H6.30761L6.59563 17.8239C6.96525 17.6312 7.25807 17.3374 7.45008 16.9666L7.60369 16.6776V14.1972V11.7167L7.45008 11.4277C7.25807 11.0569 6.96525 10.7631 6.59563 10.5704L6.30761 10.4163L3.90745 10.4067C1.83372 10.397 1.4785 10.4067 1.29608 10.4693ZM6.2356 11.2062C6.52842 11.3603 6.65803 11.4855 6.79244 11.7504L6.90765 11.9768V14.2116V16.4416L6.74924 16.7017C6.53322 17.0677 6.2068 17.2604 5.74117 17.3037C5.54916 17.323 4.55549 17.3278 3.52343 17.3182L1.65131 17.3037L1.41129 17.1737C1.12807 17.0244 1.00807 16.8992 0.854455 16.6054L0.739248 16.3886V14.1972V12.0057L0.854455 11.789C1.05607 11.3988 1.33929 11.1821 1.74731 11.1099C1.85292 11.0906 2.85618 11.081 3.97946 11.081L6.01959 11.0906L6.2356 11.2062Z">
+                        </path>
+                        <path
+                            d="M13.2441 10.4934C11.8856 10.8498 10.8583 11.8853 10.5079 13.2531C10.3735 13.7781 10.3735 14.6162 10.5079 15.1412C10.8343 16.4127 11.732 17.3808 12.9945 17.8239C13.3593 17.9491 13.4937 17.9732 14.0601 17.9925C14.617 18.0117 14.7754 17.9973 15.1162 17.9106C16.5179 17.5542 17.5452 16.5283 17.9052 15.1219C18.0348 14.6162 18.03 13.7685 17.9004 13.2531C17.55 11.8757 16.5179 10.8401 15.145 10.4885C14.6314 10.3585 13.7529 10.3585 13.2441 10.4934ZM15.2314 11.2784C15.7066 11.4518 16.0475 11.6782 16.4363 12.0828C17.0075 12.6848 17.2763 13.3639 17.2763 14.2068C17.2763 15.0882 17.0075 15.7288 16.3691 16.3645C15.721 17.0099 15.0826 17.2796 14.2186 17.2845C13.7001 17.2845 13.3113 17.193 12.8121 16.957C12.5336 16.8221 12.3608 16.692 12.0392 16.3694C11.396 15.724 11.132 15.0882 11.132 14.1972C11.132 13.3495 11.396 12.6896 11.972 12.0828C12.3608 11.6782 12.7017 11.4518 13.1817 11.2736C13.7913 11.0521 14.6218 11.0521 15.2314 11.2784Z">
+                        </path>
+                    </svg>
+                </li>
+            </ul>-->
+            <!--<a href="package-grid.html" class="primary-btn3 d-xl-flex d-none">Book A Trip</a>-->
             <div class="sidebar-button mobile-menu-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
                     <g id="SVGRepo_bgCarrier" stroke-width="0" />
-            
+
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-            
+
                     <g id="SVGRepo_iconCarrier">
                         <path d="M5 12H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
                         <path d="M5 17H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
@@ -154,6 +174,25 @@
         </div>
     </header>
 
+    <!-- Modal de búsqueda -->
+    <div class="mobile-search">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-11">
+                    <label>What are you looking for?</label>
+                    <input type="text" id="searchInput" autocomplete="off" placeholder="Type something...">
+                </div>
+                <div class="col-1 d-flex justify-content-end align-items-center">
+                    <div class="search-btn" id="searchButton">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="search-cross-btn" id="closeButton">
+                        <i class="bi bi-x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="home2-banner-area">
         <div class="swiper home1-banner-slider">
@@ -209,7 +248,8 @@
                                     </div>
                                     <div class="content">
                                         <span>To More Inquiry</span>
-                                        <h6><a href="https://api.whatsapp.com/send?phone=50689324763">+506 8932 4763</a></h6>
+                                        <h6><a href="https://api.whatsapp.com/send?phone=50689324763">+506 8932 4763</a>
+                                        </h6>
                                     </div>
                                 </div>
                                 <a href="https://www.tripadvisor.com.mx/Attraction_Review-g309243-d23973740-Reviews-New_Travels_Reasons_Costa_Rica-Playas_del_Coco_Province_of_Guanacaste.html"
@@ -258,11 +298,13 @@
         <img src="assets/img/NTRCR-Logo.png" alt="Logo de la Empresa">
         <div class="description">
             <h2>New Travels Reasons Costa Rica</h2>
-            <p>We are a certified company and our main purpose is to offer our clients a private and personalized service according
+            <p>We are a certified company and our main purpose is to offer our clients a private and personalized
+                service according
                 to their expectations. We provide adventure tours, in the ocean,
-                cultural tours and above all we focus on naturalistic tours. Our highest priority is to provide our clients with
+                cultural tours and above all we focus on naturalistic tours. Our highest priority is to provide our
+                clients with
                 quality service and a unique experience.</p>
-                <a href="cancelation-policy.html" class="secondary-btn1">Check Our Cancelation Policy</a>
+            <a href="cancelation-policy.html" class="secondary-btn1">Check Our Cancelation Policy</a>
         </div>
     </section>
     <div class="destination-card2-slider-section pt-80 mb-120">
@@ -284,7 +326,7 @@
                                         <img src="assets/img/home5/cultural-tour.jpg" alt>
                                     </a>
                                     <div class="batch">
-                                        <span>3 Tours</span>
+                                        <span>4 Tours</span>
                                     </div>
                                     <div class="destination-card2-content">
                                         <span>Enjoy Our</span>
@@ -316,7 +358,7 @@
                                         <img src="assets/img/home5/land-tour.jpg" alt>
                                     </a>
                                     <div class="batch">
-                                        <span>16 Tours</span>
+                                        <span>13 Tours</span>
                                     </div>
                                     <div class="destination-card2-content">
                                         <span>Enjoy Our</span>
@@ -369,8 +411,10 @@
             <div class="col-lg-12 d-flex justify-content-center">
                 <div class="section-title2 two text-center">
                     <h2 data-aos="fade-up">Reviews by Travellers</h2>
-                    <p data-aos="fade-up">Discover authentic travel experiences through our traveler reviews section. Dive into exciting
-                        stories, helpful tips, and genuine recommendations that will empower you to plan your next journey with confidence.
+                    <p data-aos="fade-up">Discover authentic travel experiences through our traveler reviews section.
+                        Dive into exciting
+                        stories, helpful tips, and genuine recommendations that will empower you to plan your next
+                        journey with confidence.
                     </p>
                 </div>
             </div>
@@ -589,9 +633,12 @@
                                         <li><i class="bi bi-star-fill"></i></li>
                                     </ul>
                                     <h4>Experiencia en Costa Rica</h4>
-                                    <p>“Planear nuestro viaje con ustedes ha sido la mejor decisión. Sin duda volveremos a Costa Rica para todas las
-                                        actividades que no pudimos hacer ahora. La Señora Rebecca siempre tuvo una excelente actitud, muy amable, muy
-                                        alegre. Gracias infinitas por todos los recorridos, nos quedamos con la mejor experiencia de nuestro aniversario.
+                                    <p>“Planear nuestro viaje con ustedes ha sido la mejor decisión. Sin duda volveremos
+                                        a Costa Rica para todas las
+                                        actividades que no pudimos hacer ahora. La Señora Rebecca siempre tuvo una
+                                        excelente actitud, muy amable, muy
+                                        alegre. Gracias infinitas por todos los recorridos, nos quedamos con la mejor
+                                        experiencia de nuestro aniversario.
                                         Pura vida!!!!!”</p>
                                     <div class="tesimonial-card-bottom">
                                         <div class="quote">
@@ -637,8 +684,62 @@
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                     </ul>
+                                    <h4>Best guide company</h4>
+                                    <p>“Rebecca went above and beyond to help me plan my trip she answered so promptly
+                                        and gave me so much advice
+                                        She helped me experience the best wild life tour than all the other tours that I
+                                        took
+                                        Many other tours were more expensive and didn’t get to see much
+                                        But on the tour with Rebecca she chose the perfect location to see so many
+                                        monkeys and slots she is so kind and gives her all ”</p>
+                                    <div class="tesimonial-card-bottom">
+                                        <div class="quote">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="74" height="51"
+                                                viewBox="0 0 74 51">
+                                                <g>
+                                                    <path
+                                                        d="M38.7831 34.2125C38.8172 34.5611 38.8853 34.9183 38.9704 35.267C39.7281 44.0775 47.1264 51 56.1422 51C65.6688 51 73.3906 43.2866 73.3906 33.7702C73.3906 24.526 66.103 17.0082 56.9595 16.583C59.1645 13.1047 62.7146 10.2898 67.048 8.96309L67.1928 8.92057C69.202 8.30826 70.5897 6.35226 70.4024 4.17515C70.1895 1.66637 67.9845 -0.196075 65.4645 0.0165336C58.0492 0.645856 50.6339 4.43028 45.5939 10.5789C43.0654 13.6405 41.1073 17.2463 39.9154 21.1753C38.715 25.0958 38.3063 29.331 38.715 33.5066L38.7831 34.2125Z" />
+                                                    <path
+                                                        d="M0.222559 34.2125C0.256613 34.5611 0.324725 34.9183 0.409857 35.267C1.16756 44.0775 8.56582 51 17.5817 51C27.1083 51 34.8301 43.2866 34.8301 33.7702C34.8301 24.526 27.5425 17.0082 18.399 16.583C20.604 13.1047 24.1541 10.2898 28.4875 8.96309L28.6322 8.92057C30.6414 8.30826 32.0291 6.35226 31.8418 4.17515C31.629 1.66637 29.424 -0.196075 26.904 0.0165336C19.4887 0.645856 12.0734 4.43028 7.03338 10.5789C4.50486 13.6405 2.54675 17.2463 1.35486 21.1753C0.154451 25.0958 -0.254202 29.331 0.154448 33.5066L0.222559 34.2125Z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="author-area">
+                                            <div class="author-img">
+                                                <img src="assets/img/home6/testimonial-author-img7.jpg" alt>
+                                            </div>
+                                            <div class="author-name-desig">
+                                                <h5>Shadi H</h5>
+                                                <span>Jun 2024</span>
+                                            </div>
+                                        </div>
+                                        <div class="quote">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="74" height="51"
+                                                viewBox="0 0 74 51">
+                                                <g>
+                                                    <path
+                                                        d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
+                                                    <path
+                                                        d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card2">
+                                    <ul class="rating">
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                    </ul>
                                     <h4>Best massage in Costa Rica</h4>
-                                    <p>“I had an amazing experience. I felt safe and was very pleased with the service. My family loved it so much we had them come back for a second time for massages. ”</p>
+                                    <p>“I had an amazing experience. I felt safe and was very pleased with the service.
+                                        My family loved it so much we had them come back for a second time for massages.
+                                        ”</p>
                                     <div class="tesimonial-card-bottom">
                                         <div class="quote">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="74" height="51"
@@ -683,11 +784,10 @@
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                     </ul>
-                                    <h4>Best guide company</h4>
-                                    <p>“Rebecca went above and beyond to help me plan my trip she answered so promptly and gave me so much advice
-                                        She helped me experience the best wild life tour than all the other tours that I took
-                                        Many other tours were more expensive and didn’t get to see much
-                                        But on the tour with Rebecca she chose the perfect location to see so many monkeys and slots she is so kind and gives her all ”</p>
+                                    <h4>Absolutely Amazing!</h4>
+                                    <p>“We used Rebecca for all our activities. She was amazing. She was with us for all the activities. She was also quick
+                                        to answer any questions or help with taxis. She’s very nice and efficient. My family and I highly recommend her.”
+                                    </p>
                                     <div class="tesimonial-card-bottom">
                                         <div class="quote">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="74" height="51"
@@ -702,11 +802,11 @@
                                         </div>
                                         <div class="author-area">
                                             <div class="author-img">
-                                                <img src="assets/img/home6/testimonial-author-img7.jpg" alt>
+                                                <img src="assets/img/home6/testimonial-author-img1.jpg" alt>
                                             </div>
                                             <div class="author-name-desig">
-                                                <h5>Shadi H</h5>
-                                                <span>Jun 2024</span>
+                                                <h5>Nick C</h5>
+                                                <span>Aug 2024</span>
                                             </div>
                                         </div>
                                         <div class="quote">
@@ -770,7 +870,8 @@
         <div class="container">
             <div class="insta-section-title">
                 <h3 data-aos="fade-up">Instagram</h3>
-                <p data-aos="fade-up">Follow us on <a href="https://www.instagram.com/NewTravelsCR/">@NewTravelsCR</a> </p>
+                <p data-aos="fade-up">Follow us on <a href="https://www.instagram.com/NewTravelsCR/">@NewTravelsCR</a>
+                </p>
             </div>
         </div>
         <div class="instagram-slider-wrapper">
@@ -967,7 +1068,8 @@
                                 <h5>About Us</h5>
                             </div>
                             <p>We are a small company with a lot of desire to expand, so that they can get to know the
-                                natural paradise that we have in our country Costa Rica, its culture, as well as its people
+                                natural paradise that we have in our country Costa Rica, its culture, as well as its
+                                people
                                 Pura Vida!!.</p>
                             <div class="payment-partner">
                                 <div class="widget-title">
@@ -1056,7 +1158,8 @@
                                         <svg width="35px" height="35px" viewBox="0 6 48 40"
                                             xmlns="http://www.w3.org/2000/svg" fill="#000000">
                                             <g id="SVGRepo_bgCarrier" stroke-width="0" />
-                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round" />
                                             <g id="SVGRepo_iconCarrier">
                                                 <defs>
                                                     <style>
@@ -1087,7 +1190,7 @@
                                             </g>
                                         </svg>
                                     </i></a>
-    
+
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/NewTravelsCR"><i class="bx bxl-instagram"></i></a>
@@ -1102,7 +1205,8 @@
                             </li>
                         </ul>
                         <p>©Copyright
-                            <script>document.write(new Date().getFullYear());</script> NTRCR | Designed by <a href="https://github.com/albertoue93/">Alberto Urbina</a> | Theme By <a
+                            <script>document.write(new Date().getFullYear());</script> NTRCR | Designed by <a
+                                href="https://github.com/albertoue93/">Alberto Urbina</a> | Theme By <a
                                 href="https://www.egenslab.com/">Egens Lab</a>
                         </p>
                         <div class="footer-right">
