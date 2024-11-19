@@ -208,7 +208,7 @@ const searchData = [
         title: "Night Walk Tour",
         url: "land/night-walk-tour.html",
         category: "Guanacaste Land Tour",
-        description: "This is a night tour, where you can have possible sightings of different species of an order of amphibians such as the commonly called anurans (frogs and toads), salamanders, insects, reptiles, perhaps birds and nocturnal mammals."
+        description: "This night walk our company offers in Fortuna Arenal Místico Park, Mirador el Silencio. Monteverde (biological reserves) Bijagua rainforest (Tapir Valley, Frog's Paradise, Finca Verde Lodge)."
     },
     {
         title: "Pass Full Day Adventure And Hot Springs",
