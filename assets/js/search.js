@@ -199,6 +199,12 @@ const searchData = [
         description: "It is a site with a spectacular view of the Miravalles Volcano, with volcanic activity on its slopes. Its perfect combination between nature and hike in secondary craters."
     },
     {
+        title: "Miravalles Volcano Naturalist Tour",
+        url: "land/miravalles-naturalist-tour.html",
+        category: "Guanacaste Land Tour",
+        description: "Here we will take a beautiful tour of the slopes of the volcano. We will pass through the main town and your guide will give a brief explanation and historical overview of the most important and productive activities of Miravalles."
+    },
+    {
         title: "Mega Combo Cañon De La Vieja",
         url: "land/cañom-de-la-vieja.html",
         category: "Guanacaste Land Tour",

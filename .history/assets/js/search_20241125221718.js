@@ -1,6 +1,12 @@
 // Lista de resultados simulada (puedes adaptarlo a tus necesidades)
 const searchData = [
     {
+        title: "Cancelation Policy",
+        url: "cancelation-policy.html",
+        category: "Cancelation Policy",
+        description: "Cancelation Policy."
+    },
+    {
         title: "Cultural and Handicraft Tour",
         url: "cultural/cultural-tour-2.html",
         category: "Cultural Tour",
@@ -61,7 +67,7 @@ const searchData = [
         description: "Discover a mountainous city in the northwest, famous for its biodiverse forests."
     },
     {
-        title: "Flamingo Catamaran Adventure",
+        title: "Flamingo Catamarán Adventure",
         url: "water/flamingo-catamaran-adventure.html",
         category: "Water Tour",
         description: "Enjoy this wonderful adventures in this Catamarán tours in Flamingo, Guanacaste."
@@ -86,18 +92,18 @@ const searchData = [
     },
     {
         title: "La Leona Waterfall Tour",
-        url: "water/water-tour-13.html",
+        url: "water/water-tour-12.html",
         category: "Water Tour",
         description: "You can enjoy a tour in this beautiful waterfall, you will see some beautiful turquoise pools and a spectacular waterfall."
     },
     {
-        title: "Marlin del Rey Catamaran Tour (Coco Beach)",
+        title: "Marlin del Rey Catamarán Tour (Coco Beach)",
         url: "water/marlin-del-rey-coco.html",
         category: "Water Tour",
         description: "Enjoy this wonderful adventures in this Catamarán tours in Coco Beach, Guanacaste."
     },
     {
-        title: "Marlin del Rey Catamaran Tour (Tamarindo Beach)",
+        title: "Marlin del Rey Catamarán Tour (Tamarindo Beach)",
         url: "water/marlin-del-rey-tamarindo.html",
         category: "Water Tour",
         description: "Enjoy this wonderful adventures in this Catamarán tours in Tamarindo Beach, Guanacaste."
@@ -115,13 +121,13 @@ const searchData = [
         description: "This option we can take a boat tour of 1:30 minutes, to enjoy an exotic sighting of resident and migratory birds. As well as observe howler monkeys, white-faced monkeys, crocodiles and much more."
     },
     {
-        title: "Sarapiqui Boat Tours",
+        title: "Sarapiquí Boat Tours",
         url: "water/water-tour-8.html",
         category: "Water Tour",
         description: "If you are one of those who love to travel, get to know different places in a short time and adventure, this may be your opportunity."
     },
     {
-        title: "Sarapiqui Rafting Tours",
+        title: "Sarapiquí Rafting Tours",
         url: "water/sarapiqui-rafting.html",
         category: "Water Tour",
         description: "This tours offers exhilarating rafting adventures through the stunning Sarapiquí River in Costa Rica. With experienced guides and top-notch equipment, they provide thrilling experiences for adventurers of all levels, surrounded by breathtaking rainforest scenery."
@@ -154,92 +160,122 @@ const searchData = [
         title: "Adventures And Waterfalls",
         url: "land/adventures-and-waterfalls.html",
         category: "Guanacaste Land Tour",
-        description: "This is a summary of the third search result."
+        description: "Exceptionally located in the dry tropical forest, next to the Rincón de La Vieja National Park. A site of much adventure below you can see the options we have for you."
     },
     {
-        title: "Result Title 3",
-        url: "land/water.html",
+        title: "A.T.V Tours",
+        url: "land/a-t-v-tour.html",
         category: "Guanacaste Land Tour",
-        description: "This is a summary of the third search result."
+        description: "Experience the thrill of off-road adventure with our ATV tours!"
     },
     {
-        title: "Result Title 3",
-        url: "land/water.html",
+        title: "Barra Honda National Park",
+        url: "land/barra-honda.html",
         category: "Guanacaste Land Tour",
-        description: "This is a summary of the third search result."
+        description: "It is the only park in Costa Rica that has a complex of underground caverns, and with Karstic morphology (stalagmites and stalactites are usually formed)."
     },
     {
-        title: "Result Title 3",
-        url: "land/water.html",
+        title: "El Porvenir Tour",
+        url: "land/el-porvenir-tour.html",
         category: "Guanacaste Land Tour",
-        description: "This is a summary of the third search result."
+        description: "This tour is focused on wildlife sightings (sloths, toucans, spider monkeys, howler and capuchins, crocodiles in the river, birds and more) on a private estate, here you can enjoy its trails and part of a farm. It has cabins to stay and restaurant service in the jungle."
     },
     {
-        title: "Result Title 3",
-        url: "land/water.html",
+        title: "Full Day Eco Adventure Park",
+        url: "land/eco-adventure-park.html",
         category: "Guanacaste Land Tour",
-        description: "This is a summary of the third search result."
+        description: "An experience full of nature, culture, adventure, wellness and sustainability in one day, in the same place."
     },
     {
-        title: "Result Title 3",
-        url: "land/water.html",
+        title: "Honeymoon Travel Guanacaste",
+        url: "land/honeymoon-travel.html",
         category: "Guanacaste Land Tour",
-        description: "This is a summary of the third search result."
+        description: "A spectacular place of wellness in the dry tropical forest, with a great view of the Pacific Ocean."
     },
     {
-        title: "Result Title 3",
-        url: "land/water.html",
+        title: "Miravalles Volcano Pass Day",
+        url: "land/las-hornillas-miravalles.html",
         category: "Guanacaste Land Tour",
-        description: "This is a summary of the third search result."
+        description: "It is a site with a spectacular view of the Miravalles Volcano, with volcanic activity on its slopes. Its perfect combination between nature and hike in secondary craters."
     },
     {
-        title: "Result Title 3",
-        url: "land/water.html",
+        title: "Miravalles Volcano Naturalist Tour",
+        url: "land/las-hornillas-miravalles.html",
         category: "Guanacaste Land Tour",
-        description: "This is a summary of the third search result."
+        description: "Here we will take a beautiful tour of the slopes of the volcano. We will pass through the main town and your guide will give a brief explanation and historical overview of the most important and productive activities of Miravalles."
     },
     {
-        title: "Result Title 3",
-        url: "land/water.html",
+        title: "Mega Combo Cañon De La Vieja",
+        url: "land/cañom-de-la-vieja.html",
         category: "Guanacaste Land Tour",
-        description: "This is a summary of the third search result."
+        description: "Discover the ultimate adventure with this thrilling blend of Costa Rica's finest activities in Guanacaste's breathtaking landscape!"
     },
     {
-        title: "Result Title 3",
-        url: "land/water.html",
+        title: "Night Walk Tour",
+        url: "land/night-walk-tour.html",
         category: "Guanacaste Land Tour",
-        description: "This is a summary of the third search result."
+        description: "This is a night tour, where you can have possible sightings of different species of an order of amphibians such as the commonly called anurans (frogs and toads), salamanders, insects, reptiles, perhaps birds and nocturnal mammals."
     },
     {
-        title: "Result Title 3",
-        url: "land/water.html",
+        title: "Pass Full Day Adventure And Hot Springs",
+        url: "land/adventures-and-hot-spring.html",
         category: "Guanacaste Land Tour",
-        description: "This is a summary of the third search result."
+        description: "One of the most beatiful destinations in Costa Rica, as it has many attractions and places to discover."
     },
     {
-        title: "Result Title 3",
-        url: "land/water.html",
+        title: "Santa Rosa National Park",
+        url: "land/santa-rosa-mational-park.html",
         category: "Guanacaste Land Tour",
-        description: "This is a summary of the third search result."
+        description: "In this site, declared a World Heritage Site, the only patch of dry tropical forest in Mesoamerica is preserved. In addition, the area is fully connected to humid, cloudy and rainy forests, which makes it possible for it to have an important biological richness."
+    },
+    {
+        title: "Zip Line Adrenaline",
+        url: "land/zip-line-adrenaline.html",
+        category: "Guanacaste Land Tour",
+        description: "Experience the thrill of Zip Line Adventure: Soar through the skies and feel the adrenaline rush!"
     },
 ];
+
+// Función para normalizar texto eliminando acentos
+function normalizeText(text) {
+    return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+// Función para resaltar coincidencias en el texto
+function highlightMatch(text, query) {
+    const normalizedText = normalizeText(text.toLowerCase());
+    const normalizedQuery = normalizeText(query.toLowerCase());
+
+    if (!normalizedText.includes(normalizedQuery)) return text;
+
+    // Expresión regular para encontrar el término de búsqueda y resaltarlo
+    const regex = new RegExp(`(${query})`, 'gi');
+    return text.replace(regex, '<span class="highlight">$1</span>');
+}
 
 // Función para mostrar los resultados de la búsqueda
 function displayResults(query) {
     const resultsContainer = document.getElementById('results-container');
     const searchTermElement = document.getElementById('search-term');
+    const resultsCountElement = document.getElementById('results-count'); // Elemento para el número de resultados
     
+    // Normalizar el término de búsqueda
+    const normalizedQuery = normalizeText(query.toLowerCase());
+
     // Mostrar el término de búsqueda
     searchTermElement.textContent = query;
 
     // Limpiar los resultados anteriores
     resultsContainer.innerHTML = '';
 
-    // Filtrar resultados que coincidan con el término de búsqueda
+    // Filtrar resultados que coincidan con el término de búsqueda normalizado
     const results = searchData.filter(result => 
-        result.title.toLowerCase().includes(query.toLowerCase()) ||
-        result.description.toLowerCase().includes(query.toLowerCase())
+        normalizeText(result.title.toLowerCase()).includes(normalizedQuery) ||
+        normalizeText(result.description.toLowerCase()).includes(normalizedQuery)
     );
+
+    // Mostrar el número de resultados
+    resultsCountElement.textContent = `${results.length} Results Found`;
 
     // Si no hay resultados
     if (results.length === 0) {
@@ -253,9 +289,9 @@ function displayResults(query) {
         resultElement.classList.add('search-result');
 
         resultElement.innerHTML = `
-            <a href="${result.url}" class="result-title">${result.title}</a>
+            <a href="${result.url}" class="result-title">${highlightMatch(result.title, query)}</a>
             <p class="result-category">${result.category}</p>
-            <p class="result-description">${result.description}</p>
+            <p class="result-description">${highlightMatch(result.description, query)}</p>
         `;
 
         resultsContainer.appendChild(resultElement);
@@ -275,3 +311,5 @@ window.onload = function() {
         displayResults(query);
     }
 };
+
+
