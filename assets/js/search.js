@@ -224,7 +224,7 @@ const searchData = [
     },
     {
         title: "Santa Rosa National Park",
-        url: "land/santa-rosa-mational-park.html",
+        url: "land/santa-rosa-national-park.html",
         category: "Guanacaste Land Tour",
         description: "In this site, declared a World Heritage Site, the only patch of dry tropical forest in Mesoamerica is preserved. In addition, the area is fully connected to humid, cloudy and rainy forests, which makes it possible for it to have an important biological richness."
     },

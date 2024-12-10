@@ -199,16 +199,22 @@ const searchData = [
         description: "It is a site with a spectacular view of the Miravalles Volcano, with volcanic activity on its slopes. Its perfect combination between nature and hike in secondary craters."
     },
     {
+        title: "Miravalles Volcano Naturalist Tour",
+        url: "land/miravalles-naturalist-tour.html",
+        category: "Guanacaste Land Tour",
+        description: "Here we will take a beautiful tour of the slopes of the volcano. We will pass through the main town and your guide will give a brief explanation and historical overview of the most important and productive activities of Miravalles."
+    },
+    {
         title: "Mega Combo Cañon De La Vieja",
         url: "land/cañom-de-la-vieja.html",
         category: "Guanacaste Land Tour",
         description: "Discover the ultimate adventure with this thrilling blend of Costa Rica's finest activities in Guanacaste's breathtaking landscape!"
     },
     {
-        title: "Overnight Tour",
-        url: "land/overnight-tour.html",
+        title: "Night Walk Tour",
+        url: "land/night-walk-tour.html",
         category: "Guanacaste Land Tour",
-        description: "This night walk our company offers in Fortuna Arenal Místico Park, Mirador el Silencio. Monteverde (biological reserves) Bijagua rainforest (Tapir Valley, Frog's Paradise, Finca Verde Lodge)."
+        description: "This is a night tour, where you can have possible sightings of different species of an order of amphibians such as the commonly called anurans (frogs and toads), salamanders, insects, reptiles, perhaps birds and nocturnal mammals."
     },
     {
         title: "Pass Full Day Adventure And Hot Springs",
@@ -218,7 +224,7 @@ const searchData = [
     },
     {
         title: "Santa Rosa National Park",
-        url: "land/santa-rosa-mational-park.html",
+        url: "land/santa-rosa-national-park.html",
         category: "Guanacaste Land Tour",
         description: "In this site, declared a World Heritage Site, the only patch of dry tropical forest in Mesoamerica is preserved. In addition, the area is fully connected to humid, cloudy and rainy forests, which makes it possible for it to have an important biological richness."
     },
