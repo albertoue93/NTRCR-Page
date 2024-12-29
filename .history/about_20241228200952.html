@@ -263,7 +263,7 @@
                         <strong>Excellent!</strong>
                         <img src="assets/img/home2/icon/tripadvisor-star.svg" alt>
                         <p><strong>5.0</strong> Rating out of <strong>5.0</strong> based on <a
-                                href="https://www.tripadvisor.com/Attraction_Review-g309243-d23973740-Reviews-New_Travels_Reasons_Costa_Rica-Playas_del_Coco_Province_of_Guanacaste.html"><strong>9</strong>
+                                href="https://www.tripadvisor.com/Attraction_Review-g309243-d23973740-Reviews-New_Travels_Reasons_Costa_Rica-Playas_del_Coco_Province_of_Guanacaste.html"><strong>8</strong>
                                 reviews</a></p>
                         <img src="assets/img/home2/icon/tripadvisor-logo.svg" alt>
                     </div>
@@ -271,6 +271,111 @@
             </div>
             <br>
             <hr>
+            <div id="TA_selfserveprop593" class="TA_selfserveprop">
+                <ul id="zRAYsWv0uM" class="TA_links v50a2qi5">
+                    <li id="8rTp4Ec" class="kavKA2UWZ"><a target="_blank"
+                            href="https://www.tripadvisor.com/Attraction_Review-g309243-d23973740-Reviews-New_Travels_Reasons_Costa_Rica-Playas_del_Coco_Province_of_Guanacaste.html"><img
+                                src="https://www.tripadvisor.com/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-11900-2.svg"
+                                alt="TripAdvisor" /></a></li>
+                </ul>
+            </div>
+            <script async
+                src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=593&amp;locationId=23973740&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=true&amp;border=true&amp;display_version=5"
+                data-loadtrk onload="this.loadtrk=true"></script>
+
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f9f9f9;
+                    }
+                    .reviews-container {
+                        max-width: 1200px;
+                        margin: 20px auto;
+                        padding: 20px;
+                        background: #fff;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        border-radius: 10px;
+                    }
+                    .review {
+                        border-bottom: 1px solid #ddd;
+                        padding: 15px 0;
+                    }
+                    .review:last-child {
+                        border-bottom: none;
+                    }
+                    .review h3 {
+                        margin: 0 0 10px;
+                        color: #333;
+                    }
+                    .review p {
+                        margin: 5px 0;
+                        color: #666;
+                    }
+                    .review .rating {
+                        color: #f4b400; /* Color para las estrellas */
+                        font-size: 18px;
+                    }
+                    .review-date {
+                        font-size: 14px;
+                        color: #999;
+                    }
+                    .loading {
+                        text-align: center;
+                        color: #666;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="reviews-container">
+                    <h1>Reseñas de nuestros clientes</h1>
+                    <div id="reviews">
+                        <p class="loading">Cargando reseñas...</p>
+                    </div>
+                </div>
+                <script>
+                    const reviewsContainer = document.getElementById('reviews');
+                    
+                    async function fetchReviews() {
+                        try {
+                            const response = await fetch('TU_ENDPOINT_DE_TRIPADVISOR', {
+                                headers: {
+                                    'Authorization': 'Bearer 23973740', // Cambia esto según tu configuración
+                                    'Content-Type': 'application/json'
+                                }
+                            });
+            
+                            if (!response.ok) {
+                                throw new Error(`Error: ${response.status}`);
+                            }
+            
+                            const data = await response.json();
+                            displayReviews(data.reviews);
+                        } catch (error) {
+                            reviewsContainer.innerHTML = `<p class="loading">No se pudieron cargar las reseñas. Intenta más tarde.</p>`;
+                            console.error('Error al obtener las reseñas:', error);
+                        }
+                    }
+            
+                    function displayReviews(reviews) {
+                        reviewsContainer.innerHTML = ''; // Limpia el contenido actual
+                        reviews.forEach(review => {
+                            const reviewElement = document.createElement('div');
+                            reviewElement.classList.add('review');
+                            reviewElement.innerHTML = `
+                                <h3>${review.title || 'Reseña sin título'}</h3>
+                                <div class="rating">${'⭐'.repeat(review.rating)}</div>
+                                <p>${review.text || 'Sin comentarios adicionales.'}</p>
+                                <p class="review-date">Publicado el: ${new Date(review.date).toLocaleDateString()}</p>
+                            `;
+                            reviewsContainer.appendChild(reviewElement);
+                        });
+                    }
+            
+                    // Llamada inicial para obtener reseñas
+                    fetchReviews();
+                </script>
         </div>
     </div>
     <div class="social-sticky-bar">
