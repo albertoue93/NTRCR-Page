@@ -164,7 +164,7 @@ const searchData = [
     },
     {
         title: "A.T.V Tours",
-        url: "land/a-t-v-tour.html",
+        url: "land/a-t-v-tours.html",
         category: "Guanacaste Land Tour",
         description: "Experience the thrill of off-road adventure with our ATV tours!"
     },
