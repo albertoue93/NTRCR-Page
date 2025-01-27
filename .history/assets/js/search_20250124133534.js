@@ -85,7 +85,7 @@ const searchData = [
         description: "With this small historical tour we will review the Nicoya Guanacaste park and we will see the church of San Blas de Nicoya."
     },
     {
-        title: "El Viejo Boat Tours",
+        title: "Hacienda El Viejo Boat Tours",
         url: "water/water-tour-4.html",
         category: "Water Tour",
         description: "This magnificent 5,000-acre Private Wildlife Refuge and Sugar Farm along the Tempisque River."
