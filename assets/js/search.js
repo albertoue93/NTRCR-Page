@@ -121,12 +121,6 @@ const searchData = [
         description: "At this site we will enjoy bird watching such as: pink spatula heron, tiger heron, and other animals."
     },
     {
-        title: "Rancho Los Coyotes Boat Tours",
-        url: "water/water-tour-7.html",
-        category: "Water Tour",
-        description: "This option we can take a boat tour of 1:30 minutes, to enjoy an exotic sighting of resident and migratory birds. As well as observe howler monkeys, white-faced monkeys, crocodiles and much more."
-    },
-    {
         title: "Sarapiquí Boat Tours",
         url: "water/water-tour-8.html",
         category: "Water Tour",

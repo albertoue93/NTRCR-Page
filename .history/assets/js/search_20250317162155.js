@@ -31,6 +31,12 @@ const searchData = [
         description: "Original Malekus tribe, one of the most prominent ethnic groups in our country. For his painting works in his masquerades, his dance and his culture."
     },
     {
+        title: "Cultural and Traditional Tour of Guanacaste",
+        url: "cultural/cultural-tour-5.html",
+        category: "Cultural Tour",
+        description: "This tour is in an old house where we can enjoy a cultural tour. Here we can see the process of sugar cane and its derivatives, tasting it. A brief explanation of the strong economic activity in the north of the country since 1800."
+    },
+    {
         title: "Arenal Rafting",
         url: "fortuna/arenal-rafting.html",
         category: "Fortuna Tour",
@@ -79,7 +85,7 @@ const searchData = [
         description: "With this small historical tour we will review the Nicoya Guanacaste park and we will see the church of San Blas de Nicoya."
     },
     {
-        title: "Hacienda El Viejo Boat Tours",
+        title: "El Viejo Boat Tours",
         url: "water/water-tour-4.html",
         category: "Water Tour",
         description: "This magnificent 5,000-acre Private Wildlife Refuge and Sugar Farm along the Tempisque River."
@@ -113,12 +119,6 @@ const searchData = [
         url: "water/water-tour-6.html",
         category: "Water Tour",
         description: "At this site we will enjoy bird watching such as: pink spatula heron, tiger heron, and other animals."
-    },
-    {
-        title: "Rancho Los Coyotes Boat Tours",
-        url: "water/water-tour-7.html",
-        category: "Water Tour",
-        description: "This option we can take a boat tour of 1:30 minutes, to enjoy an exotic sighting of resident and migratory birds. As well as observe howler monkeys, white-faced monkeys, crocodiles and much more."
     },
     {
         title: "Sarapiquí Boat Tours",
