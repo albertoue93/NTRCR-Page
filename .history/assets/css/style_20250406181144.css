@@ -23,7 +23,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #faf6e7;
   margin: 0;
   padding: 0;
   font-family: var(--font-rubik);
@@ -18539,7 +18538,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   color: var(--title-color);
   font-family: var(--font-rubik);
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 550;
   line-height: 1.2;
   letter-spacing: 0.75px;
   margin-bottom: 20px;
@@ -18559,8 +18558,8 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   color: var(--text-color);
   font-family: var(--font-rubik);
   font-size: 17px;
-  font-weight: 400;
-  line-height: 1.9;
+  font-weight: 350;
+  line-height: 1.6;
   letter-spacing: 0.51px;
   margin-bottom: 25px;
 }
@@ -26181,7 +26180,6 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 .breadcrumb-section .banner-content .breadcrumb-list li::before {
   content: url(../img/innerpage/icon/slash.svg);
   position: absolute;
-  fill: #faf6e7;
   left: 0;
   top: 50%;
   transform: translateY(-50%);

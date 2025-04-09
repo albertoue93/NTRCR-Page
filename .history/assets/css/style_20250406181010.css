@@ -23,7 +23,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #faf6e7;
   margin: 0;
   padding: 0;
   font-family: var(--font-rubik);
@@ -18559,7 +18558,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   color: var(--text-color);
   font-family: var(--font-rubik);
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 350;
   line-height: 1.9;
   letter-spacing: 0.51px;
   margin-bottom: 25px;
@@ -36094,10 +36093,9 @@ button#searchButton:hover::after {
 }
 
 .inner-shape {
-  background-image: url(../img/slider-pattern.svg);
+  background-image: url(../img/slider-pattern.png);
   background-size: cover;
   background-repeat: no-repeat;
-  color: #faf6e7;
   content: "";
   height: 150px;
   width: 100%;

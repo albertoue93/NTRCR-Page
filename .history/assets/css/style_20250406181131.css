@@ -23,7 +23,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #faf6e7;
   margin: 0;
   padding: 0;
   font-family: var(--font-rubik);
@@ -18500,7 +18499,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
     linear-gradient(180deg, whitesmoke 0%, whitesmoke 100%);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 35px 30px;
+  padding: 25px 30px;
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
   .testimonial-card2 {
@@ -18539,7 +18538,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   color: var(--title-color);
   font-family: var(--font-rubik);
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 550;
   line-height: 1.2;
   letter-spacing: 0.75px;
   margin-bottom: 20px;
@@ -18559,8 +18558,8 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   color: var(--text-color);
   font-family: var(--font-rubik);
   font-size: 17px;
-  font-weight: 400;
-  line-height: 1.9;
+  font-weight: 350;
+  line-height: 1.6;
   letter-spacing: 0.51px;
   margin-bottom: 25px;
 }
