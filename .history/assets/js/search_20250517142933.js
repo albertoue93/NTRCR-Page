@@ -235,7 +235,7 @@ const searchData = [
         description: "Experience the thrill of Zip Line Adventure: Soar through the skies and feel the adrenaline rush!"
     },
     {
-        title: "U.T.V. Tour (Side-by-Side) in Papagayo",
+        title: ".T.V. Tour (Side-by-Side) in Papagayo",
         url: "land/u-t-v-papagayo.html",
         category: "Guanacaste Land Tour",
         description: "On this tour, we will visit Las Pilas, nearby villages, and beaches around the area. Our guides will take you through the trails and streets of nearby villages, waterfalls (depending on the season), rivers in the middle of the dry forest, and nearby beaches, where you can enjoy swimming, as well as the flora and fauna of the Guanacaste pampas."
