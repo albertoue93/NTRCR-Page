@@ -248,7 +248,7 @@ const searchData = [
     },
     {
         title: "Hanging Bridges and Hot Springs",
-        url: "fortuna/fortuna-hanging-bridges.html",
+        url: "fortuna-hanging-bridges.html",
         category: "Fortuna Tour",
         description: "This is a spectacular place with a warm and humid forest. The majestic Arenal Volcano, the only conical volcano in the entire mountainous region of Costa Rica, will also be present."
     },
