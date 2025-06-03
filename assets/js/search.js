@@ -126,12 +126,12 @@ const searchData = [
         category: "Water Tour",
         description: "If you are one of those who love to travel, get to know different places in a short time and adventure, this may be your opportunity."
     },
-    {
+    /*{
         title: "Sarapiquí Rafting Tours",
         url: "water/sarapiqui-rafting.html",
         category: "Water Tour",
         description: "This tours offers exhilarating rafting adventures through the stunning Sarapiquí River in Costa Rica. With experienced guides and top-notch equipment, they provide thrilling experiences for adventurers of all levels, surrounded by breathtaking rainforest scenery."
-    },
+    },*/
     {
         title: "Sport Fishing",
         url: "water/water-tour-9.html",
