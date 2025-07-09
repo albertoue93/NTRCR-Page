@@ -14339,7 +14339,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 .home2-about-section .about-img-wrap .about-img::before {
   content: "";
-  position: static;
+  position: absolute;
   top: 0;
   left: 0;
   width: 90%;
@@ -35682,7 +35682,7 @@ select::-ms-expand {
   margin: 50px auto;
 }
 .company-about img {
-  max-width: 150px;
+  max-width: 180px;
   margin-right: 20px;
 }
 .company-about .description {

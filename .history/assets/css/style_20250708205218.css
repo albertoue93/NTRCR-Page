@@ -14329,7 +14329,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   stroke-dashoffset: 0;
 }
 .home2-about-section .about-img-wrap {
-  position: fixed;
+  position: relative;
 }
 .home2-about-section .about-img-wrap .about-img {
   /*-webkit-mask-box-image: url(../img/home2/home2-about-img-bg-vector.png);
@@ -14347,11 +14347,11 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   /*background-color: rgba(16, 12, 8, 0.3);*/
   z-index: 1;
 }
-@media (max-width: 991px) {
+/*@media (max-width: 991px) {
   .home2-about-section .about-img-wrap {
     display: none;
   }
-}
+}*/
 .home2-about-section .about-img-wrap .experience {
   position: absolute;
   bottom: 5px;
@@ -35677,12 +35677,11 @@ select::-ms-expand {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  background-color: #f9f9f9;
   max-width: 800px;
   margin: 50px auto;
 }
 .company-about img {
-  max-width: 150px;
+  max-width: 250px;
   margin-right: 20px;
 }
 .company-about .description {

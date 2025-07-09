@@ -7900,11 +7900,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 .home1-about-section .about-img {
   position: relative;
 }
-@media (max-width: 991px) {
-  .home1-about-section .about-img {
-    display: none;
-  }
-}
+
 .home1-about-section .about-img .vector {
   position: absolute;
   left: 10%;
@@ -18538,7 +18534,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   color: var(--title-color);
   font-family: var(--font-rubik);
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 550;
   line-height: 1.2;
   letter-spacing: 0.75px;
   margin-bottom: 20px;
@@ -18559,7 +18555,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   font-family: var(--font-rubik);
   font-size: 17px;
   font-weight: 350;
-  line-height: 1.9;
+  line-height: 1.6;
   letter-spacing: 0.51px;
   margin-bottom: 25px;
 }
@@ -35682,7 +35678,7 @@ select::-ms-expand {
   margin: 50px auto;
 }
 .company-about img {
-  max-width: 150px;
+  max-width: 250px;
   margin-right: 20px;
 }
 .company-about .description {
