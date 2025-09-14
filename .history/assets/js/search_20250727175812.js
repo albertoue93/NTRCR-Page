@@ -55,9 +55,9 @@ const searchData = [
         description: "Discover and experience the breathtaking wonders of Costa Rica with a combination of adrenaline and adventure."
     },
     {
-        title: "Bijagua Rainforest Tours",
-        url: "land/rainforest-bijagua.html",
-        category: "Bijagua Rainforest Tours.",
+        title: "Bijagua Tours",
+        url: "land/bijagua-tours.html",
+        category: "Bijagua Tours.",
         description: "It is a jungle in this part of the Province of Alajuela near the border between the province of Guanacaste and because it is a biological corridor it is home to many tropical species such as mammals, amphibians, reptiles and birds."
     },
     {
