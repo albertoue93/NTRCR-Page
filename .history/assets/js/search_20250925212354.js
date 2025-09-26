@@ -172,13 +172,13 @@ const searchData = [
         title: "A.T.V. Papagayo",
         url: "land/a-t-v-papagayo.html",
         category: "Guanacaste Land Tour",
-        description: "Enjoy an exciting adventure through stunning beaches, local villages, and breathtaking landscapes in the Gulf of Papagayo."
+        description: "Experience the thrill of off-road adventure with our ATV tours!"
     },
     {
         title: "A.T.V. Santa Elena",
         url: "land/a-t-v-santa-elena.html",
         category: "Guanacaste Land Tour",
-        description: "Discover the natural beauty and unique charm of northern Guanacaste with this special tour along the beaches of La Cruz, one of the oldest geological regions in Costa Rica. Its rocky formations, dramatic cliffs, and picturesque bays create the perfect setting for exploration and relaxation."
+        description: "Experience the thrill of off-road adventure with our ATV tours!"
     },
     {
         title: "Barra Honda National Park",
