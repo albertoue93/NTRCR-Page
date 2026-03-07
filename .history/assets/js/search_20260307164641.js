@@ -37,6 +37,12 @@ const searchData = [
         description: "This tour is in an old house where we can enjoy a cultural tour. Here we can see the process of sugar cane and its derivatives, tasting it. A brief explanation of the strong economic activity in the north of the country since 1800."
     },
     {
+        title: "Liberia City Tour",
+        url: "cultural/cultural-tour-6.html",
+        category: "Cultural Tour",
+        description: "Known as the White City, Liberia is the cultural and administrative heart of Guanacaste. Its name comes from the old houses painted with white lime, which still preserve a unique and traditional charm."
+    },
+    {
         title: "Arenal Rafting",
         url: "fortuna/arenal-rafting.html",
         category: "Fortuna Tour",
@@ -61,10 +67,22 @@ const searchData = [
         description: "This tour is completely private in search of sightings of different species of birds, depending on the place where our clients are for their comfort or according to the sighting expectations they desire."
     },
     {
-        title: "Monteverde Cloud Forest",
-        url: "land/monteverde-cloud.html",
-        category: "Monteverde Cloud Forest.",
-        description: "Discover a mountainous city in the northwest, famous for its biodiverse forests."
+        title: "Adventure in the Monteverde Cloud Forest",
+        url: "monteverde/adventure-monteverde.cloud-forest.html",
+        category: "Monteverde Tours.",
+        description: "Embark on an unforgettable journey that blends excitement, nature, and breathtaking scenery in one of Costa Rica’s most magical destinations: the Monteverde Cloud Forest."
+    },
+    {
+        title: "Cloud Forest Nature Reserve and Coffee Tour",
+        url: "monteverde/cloud-forest-nature-reserve.html",
+        category: "Monteverde Tours.",
+        description: "This natural treasure is home to more than 2,500 plant species (including a remarkable percentage of all species found in Costa Rica), as well as 100 species of mammals, 400 species of birds, and 120 species of reptiles and amphibians."
+    },
+    {
+        title: "Cloud Forest Park Adventure & Fauna Exhibitions",
+        url: "monteverde/cloud-forest-park-adventure.html",
+        category: "Monteverde Tours.",
+        description: "The experience begins with a walk along the hanging bridges, where you can admire the rich variety of flora and fauna of the cloud forest. These treetop trails offer breathtaking views of the canopy and the unique endemic biodiversity that makes Monteverde one of the most remarkable destinations in the world."
     },
     {
         title: "Flamingo Catamarán Adventure",
@@ -85,7 +103,7 @@ const searchData = [
         description: "This magnificent 5,000-acre Private Wildlife Refuge and Sugar Farm along the Tempisque River."
     },
     {
-        title: "Jet Ski",
+        title: "Jet Ski Tour – Gulf of Papagayo",
         url: "water/water-tour-5.html",
         category: "Water Tour",
         description: "You can enjoy a tour of the ocean, on jet skis through the sectors of Peninsula de Papagayo."
@@ -157,10 +175,16 @@ const searchData = [
         description: "Exceptionally located in the dry tropical forest, next to the Rincón de La Vieja National Park. A site of much adventure below you can see the options we have for you."
     },
     {
-        title: "A.T.V. Tours",
-        url: "land/a-t-v-tours.html",
+        title: "A.T.V. Papagayo",
+        url: "land/a-t-v-papagayo.html",
         category: "Guanacaste Land Tour",
-        description: "Experience the thrill of off-road adventure with our ATV tours!"
+        description: "Enjoy an exciting adventure through stunning beaches, local villages, and breathtaking landscapes in the Gulf of Papagayo."
+    },
+    {
+        title: "A.T.V. Santa Elena",
+        url: "land/a-t-v-santa-elena.html",
+        category: "Guanacaste Land Tour",
+        description: "Discover the natural beauty and unique charm of northern Guanacaste with this special tour along the beaches of La Cruz, one of the oldest geological regions in Costa Rica. Its rocky formations, dramatic cliffs, and picturesque bays create the perfect setting for exploration and relaxation."
     },
     {
         title: "Barra Honda National Park",
@@ -188,7 +212,7 @@ const searchData = [
     },
     {
         title: "Miravalles Volcano Pass Day",
-        url: "land/las-hornillas-miravalles.html",
+        url: "land/miravalles-volcano.html",
         category: "Guanacaste Land Tour",
         description: "It is a site with a spectacular view of the Miravalles Volcano, with volcanic activity on its slopes. Its perfect combination between nature and hike in secondary craters."
     },
@@ -249,20 +273,20 @@ const searchData = [
     {
         title: "Rio Celeste & Llanos de Cortes Experience",
         url: "bijagua/rio-celeste-adventure.html",
-        category: "Fortuna Tour",
-        description: "Embark on an unforgettable adventure with a guided hike of approximately 2 hours and 30 minutes inside the Tenorio Volcano National Park, home to one of Costa Rica’s most magical natural wonders: the Celeste River (originally named Rio Buena Vista).
+        category: "Bijagua Tour",
+        description: "Embark on an unforgettable adventure with a guided hike of approximately 2 hours and 30 minutes inside the Tenorio Volcano National Park, home to one of Costa Rica’s most magical natural wonders: the Celeste River (originally named Rio Buena Vista)"
     },
     {
         title: "Rio Celeste Full day Experience",
         url: "bijagua/rio-celeste-full-experience.html",
-        category: "Fortuna Tour",
+        category: "Bijagua Tour",
         description: "This full-day tour combines the best of Costa Rica’s nature, wildlife, and culture.."
     },
     {
-        title: "La Fortuna A.T.V. Tour",
-        url: "bijagua/fortuna-atv-tour.html",
-        category: "Fortuna Tour",
-        description: "This isn't just an adventure tour; the guides will focus on our clients' every need, making them feel comfortable and supported at all times. You'll also learn a lot about the history, wildlife, and other important aspects of our community."
+        title: "Tubing adventure and Wildlife",
+        url: "bijagua/tubing-adventure.html",
+        category: "Bijagua Tour",
+        description: "The tubing tour on the Celeste River is a perfect adventure for those looking for a combination of excitement and natural beauty. Next, after the adventure through the turquoise-colored river, we will go to have a delicious traditional lunch of the area highlighting the culture of the place."
     },
 
 ];

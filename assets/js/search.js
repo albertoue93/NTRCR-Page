@@ -103,7 +103,7 @@ const searchData = [
         description: "This magnificent 5,000-acre Private Wildlife Refuge and Sugar Farm along the Tempisque River."
     },
     {
-        title: "Jet Ski",
+        title: "Jet Ski Tour – Gulf of Papagayo",
         url: "water/water-tour-5.html",
         category: "Water Tour",
         description: "You can enjoy a tour of the ocean, on jet skis through the sectors of Peninsula de Papagayo."
