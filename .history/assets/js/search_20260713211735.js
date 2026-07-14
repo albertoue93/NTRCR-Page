@@ -115,8 +115,8 @@ const searchData = [
         description: "You can enjoy a tour in this beautiful waterfall, you will see some beautiful turquoise pools and a spectacular waterfall."
     },
     {
-        title: "Catamarán Tour (Coco Beach)",
-        url: "water/coco-catamaran.html",
+        title: "Marlin del Rey Catamarán Tour (Coco Beach)",
+        url: "water/marlin-del-rey-coco.html",
         category: "Water Tour",
         description: "Enjoy this wonderful adventures in this Catamarán tours in Coco Beach, Guanacaste."
     },

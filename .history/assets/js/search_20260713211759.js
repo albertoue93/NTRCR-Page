@@ -116,7 +116,7 @@ const searchData = [
     },
     {
         title: "Catamarán Tour (Coco Beach)",
-        url: "water/coco-catamaran.html",
+        url: "water/coco-.html",
         category: "Water Tour",
         description: "Enjoy this wonderful adventures in this Catamarán tours in Coco Beach, Guanacaste."
     },
