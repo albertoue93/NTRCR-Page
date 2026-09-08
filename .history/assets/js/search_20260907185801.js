@@ -236,7 +236,7 @@ const searchData = [
     },
     {
         title: "Pass Full Day Adventure And Hot Springs",
-        url: "land/adventures-and-hot-spring.html",
+        url: "land/adventure-and-hot-spring.html",
         category: "Guanacaste Land Tour",
         description: "One of the most beatiful destinations in Costa Rica, as it has many attractions and places to discover."
     },
