@@ -271,8 +271,8 @@ const searchData = [
         description: "This isn't just an adventure tour; the guides will focus on our clients' every need, making them feel comfortable and supported at all times. You'll also learn a lot about the history, wildlife, and other important aspects of our community."
     },
     {
-        title: "Family Adventure: Waterfall, Rainforest & Río Celeste.",
-        url: "bijagua/rio-celeste-family-adventure.html",
+        title: "Rio Celeste & Llanos de Cortes Experience",
+        url: "bijagua/rio-celeste-adventure.html",
         category: "Bijagua Tour",
         description: "An experience specially designed for families with children who want to enjoy adventure, nature, and the extraordinary biodiversity of the Miravalles-Tenorio Biological Corridor."
     },
