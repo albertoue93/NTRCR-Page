@@ -31259,24 +31259,55 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   }
 }
 .package-details-area .tour-price {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
-.package-details-area .tour-price h3 {
-  font-size: 25px;
-  font-family: var(--font-jost);
-  color: var(--primary-color1);
-  line-height: 1.25;
-  font-weight: 700;
-  letter-spacing: 0.75px;
-  margin-bottom: 0;
+
+.package-details-area .tour-price .price-main {
+    display: flex;
+    align-items: baseline;
 }
-.package-details-area .tour-price span {
-  font-family: var(--font-jost);
-  font-size: 12px;
-  line-height: 1.25;
-  font-weight: 400;
+
+.package-details-area .tour-price .price-main h3 {
+    font-size: 28px;
+    font-family: var(--font-jost);
+    color: var(--primary-color1);
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    margin-bottom: 0;
+}
+
+.package-details-area .price-main span {
+    font-family: var(--font-jost);
+    font-size: 18px;
+    line-height: 1.25;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.package-details-area .price-details {
+    margin-top: 4px;
+}
+
+.package-details-area .price-details p {
+    margin: 0;
+    font-family: var(--font-jost);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.package-details-area .price-extra {
+    margin-top: 12px;
+}
+
+.package-details-area .price-extra div {
+    display: flex;
+    gap: 5px;
+    font-family: var(--font-jost);
+    font-size: 14px;
+    line-height: 1.6;
 }
 .package-details-area .tour-info-metalist {
   display: flex;

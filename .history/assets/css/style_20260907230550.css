@@ -31261,7 +31261,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 .package-details-area .tour-price {
   display: flex;
   align-items: baseline;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .package-details-area .tour-price h3 {
   font-size: 25px;

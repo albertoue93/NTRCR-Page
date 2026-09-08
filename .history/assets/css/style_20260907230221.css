@@ -31261,10 +31261,10 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 .package-details-area .tour-price {
   display: flex;
   align-items: baseline;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .package-details-area .tour-price h3 {
-  font-size: 25px;
+  font-size: 28px;
   font-family: var(--font-jost);
   color: var(--primary-color1);
   line-height: 1.25;
@@ -31274,7 +31274,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 .package-details-area .tour-price span {
   font-family: var(--font-jost);
-  font-size: 12px;
+  font-size: 18px;
   line-height: 1.25;
   font-weight: 400;
 }
